@@ -19,7 +19,7 @@ const Container = styled.button`
   }
 
   &:disabled {
-    background: var(--disabled-color);
+    background: var(--gray);
   }
 `;
 
