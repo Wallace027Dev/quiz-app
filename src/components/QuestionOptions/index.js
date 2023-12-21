@@ -60,6 +60,11 @@ export default function QuestionOptions() {
         <span>C</span>
         <p>NIFTYBANK</p>
       </button>
+      {answerSelected !== null && (
+        <p style={{ marginTop: 16, opacity: 0.5, fontSize: 12 }}>
+          Tem certeza? Ao prosseguir <u>não poderá</u> mudar sua resposta!
+        </p>
+      )}
     </Container>
   );
 }
