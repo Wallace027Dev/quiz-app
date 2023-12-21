@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled.button`
+export const Container = styled.button`
   border-radius: 0.47rem;
   background: var(--primary);
   color: var(--light-font);
@@ -22,11 +22,3 @@ const Container = styled.button`
     background: var(--gray);
   }
 `;
-
-export default function Button({children}) {
-  return (
-    <Container>
-      {children}
-    </Container>
-  )
-}
