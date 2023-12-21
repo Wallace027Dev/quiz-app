@@ -9,6 +9,7 @@
 html {
   font-family: 'Roboto', sans-serif;
   background: var(--bg-main);
+  text-align: center;
 }
 
 :root {
@@ -18,5 +19,5 @@ html {
   --primary: #31cd63;
   --secondary: #45c486;
   --tertiary: #936e38;
-  --gray: #747475
+  --gray: #747475;
 }

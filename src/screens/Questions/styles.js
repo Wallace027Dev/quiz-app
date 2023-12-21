@@ -1,7 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
   padding: 3rem 1.25rem;
+
+  > button {
+    height: 3.75rem;
+  }
 `;
 
 export const Status = styled.div`
