@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.button`
   border-radius: 0.47rem;
@@ -11,7 +11,7 @@ export const Container = styled.button`
   width: 100%;
   min-width: 15rem;
   max-width: 20rem;
-  transition: all .35s;
+  transition: all 0.35s;
 
   &:hover {
     cursor: pointer;

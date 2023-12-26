@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -20,12 +20,22 @@ export const Status = styled.div`
     align-items: center;
     margin-bottom: 2.25rem;
 
-    span {
+    div {
       background: var(--light-font);
       border-radius: 0.25rem;
       padding: 0.25rem 0.5rem;
-      font-size: 0.875rem;
-      font-weight: 700;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 1.5rem;
+        margin-right: 0.25rem;
+      }
+
+      span {
+        font-size: 0.875rem;
+        font-weight: 700;
+      }
     }
 
     h1 {
@@ -39,7 +49,6 @@ export const Status = styled.div`
       }
     }
   }
-`
+`;
 
 export const Question = styled.div``;
-

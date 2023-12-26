@@ -8,7 +8,6 @@ export default function QuestionOptions() {
   const [answerSelected, setAnswerSelected] = useState(null);
 
   function handleAnswerSelected(answerIndex) {
-    // Desativa o botão anterior
     if (answerSelected !== null) {
       const prevButton = document.getElementById(`button-${answerSelected}`);
       prevButton.classList.remove('active');
@@ -17,7 +16,6 @@ export default function QuestionOptions() {
       )}</span><p>${getButtonText(answerSelected)}</p>`;
     }
 
-    // Ativa o botão atual
     setAnswerSelected(answerIndex);
     const currentButton = document.getElementById(`button-${answerIndex}`);
     currentButton.classList.add('active');
@@ -26,7 +24,6 @@ export default function QuestionOptions() {
     )}</p>`;
   }
 
-  // Função para obter o texto original do botão com base no índice
   function getButtonText(index) {
     const buttonTextArray = ['NIFTY50', 'NIFTYNEXT50', 'NIFTYBANK'];
     return buttonTextArray[index];
