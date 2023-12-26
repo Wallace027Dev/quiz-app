@@ -22,8 +22,7 @@ export const Container = styled.div`
     font-size: 1rem;
 
     span {
-      background: var(--gray);
-      opacity: 0.5;
+      background: var(--bg-main);
       width: 2.3rem;
       height: 2.3rem;
       display: flex;

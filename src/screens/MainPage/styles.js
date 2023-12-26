@@ -4,19 +4,18 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100vh;
-  padding: 0 1rem;
+  padding: 3rem 1.25rem;
   text-align: center;
 
-  
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0;
   }
-`
+`;
 
 export const Title = styled.div`
   font-weight: 700;
@@ -60,7 +59,7 @@ export const Logo = styled.div`
     height: 21rem;
   }
 
-  @media screen and (min-width: 1024px) {  
+  @media screen and (min-width: 1024px) {
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -70,4 +69,4 @@ export const Logo = styled.div`
       height: 25rem;
     }
   }
-`
+`;

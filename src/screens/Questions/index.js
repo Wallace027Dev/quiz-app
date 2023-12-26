@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-import { Container, Status } from './styles';
+import { Container, PcStatusBar, Status } from './styles';
 
 import StatusBar from '../../components/StatusBar';
 import QuestionOptions from '../../components/QuestionOptions';
@@ -10,8 +11,20 @@ import close from '../../assets/images/close-icon.svg';
 import icon from '../../assets/images/icon.svg';
 
 export default function Questions() {
+  const [buttonData, setButtonData] = useState('');
+
+  const isDisabled = !buttonData;
+
+  function handleButtonData(buttonData) {
+    setButtonData(buttonData);
+  }
+
+  function handleClick() {
+    alert(buttonData);
+  }
+
   let totalQuestions = 10;
-  let currentQuestion = 10;
+  let currentQuestion = 8;
 
   return (
     <Container>
@@ -28,18 +41,29 @@ export default function Questions() {
             </Link>
           </div>
 
+          <div className="phone-status-bar">
+            <StatusBar
+              totalQuestions={totalQuestions}
+              currentQuestion={currentQuestion}
+            />
+          </div>
+        </Status>
+
+        <QuestionOptions handleButtonData={handleButtonData} />
+      </div>
+
+      <PcStatusBar>
+        <Status className="pc-status-bar">
           <StatusBar
             totalQuestions={totalQuestions}
             currentQuestion={currentQuestion}
           />
         </Status>
 
-        <QuestionOptions />
-      </div>
-
-      <Button>
-        {currentQuestion === totalQuestions ? 'CONCLUIR' : 'CONTINUE'}
-      </Button>
+        <Button onClick={handleClick} isDisabled={isDisabled}>
+          {currentQuestion === totalQuestions ? 'CONCLUIR' : 'CONTINUE'}
+        </Button>
+      </PcStatusBar>
     </Container>
   );
 }

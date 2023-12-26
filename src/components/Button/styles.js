@@ -7,20 +7,20 @@ export const Container = styled.button`
   font-weight: 700;
   font-size: 1rem;
   border: none;
-  height: 2.5rem;
+  height: 3.75rem !important;
   width: 100%;
-  min-width: 15rem;
+  min-width: 15rem !important;
   max-width: 20rem;
   transition: all 0.35s;
+
+  &:disabled {
+    background: var(--gray);
+    opacity: 0.5;
+  }
 
   &:hover {
     cursor: pointer;
     transition: 0.4s;
     background: var(--primary);
-  }
-
-  &:disabled {
-    background: var(--gray);
-    opacity: 0.5;
   }
 `;

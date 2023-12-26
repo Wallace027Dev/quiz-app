@@ -4,19 +4,25 @@ import { Container } from './styles';
 
 import check from '../../assets/images/check-icon.svg';
 
-export default function QuestionOptions() {
+export default function QuestionOptions(props) {
   const [answerSelected, setAnswerSelected] = useState(null);
+  const [buttonData, setButtonData] = useState('');
+
+  props.handleButtonData(buttonData);
 
   function handleAnswerSelected(answerIndex) {
     if (answerSelected !== null) {
       const prevButton = document.getElementById(`button-${answerSelected}`);
       prevButton.classList.remove('active');
-      prevButton.innerHTML = `<span>${String.fromCharCode(
-        65 + answerSelected
-      )}</span><p>${getButtonText(answerSelected)}</p>`;
+      prevButton.innerHTML = `
+        <span>${String.fromCharCode(65 + answerSelected)}</span>
+        <p>${getButtonText(answerSelected)}</p>
+      `;
     }
 
+    setButtonData(getButtonText(answerIndex));
     setAnswerSelected(answerIndex);
+
     const currentButton = document.getElementById(`button-${answerIndex}`);
     currentButton.classList.add('active');
     currentButton.innerHTML = `<span><img src=${check} /></span><p>${getButtonText(

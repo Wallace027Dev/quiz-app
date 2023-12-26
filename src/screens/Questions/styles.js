@@ -8,8 +8,25 @@ export const Container = styled.div`
   height: 100vh;
   padding: 3rem 1.25rem;
 
-  > button {
-    height: 3.75rem;
+  .phone-status-bar {
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+`;
+
+export const PcStatusBar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 13rem;
+
+  @media screen and (max-width: 1024px) {
+    width: 20rem;
+
+    .pc-status-bar {
+      display: none;
+    }
   }
 `;
 
