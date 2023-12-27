@@ -1,15 +1,20 @@
 import { Link } from 'react-router-dom';
+import { useQuizContext } from '../../context/QuizContext';
 
 import { Container, Logo, Quizes, Title } from './styles';
 import Button from '../../components/Button';
 
-import logo from '../../assets/images/logo-vertical.svg';
+import logoVertical from '../../assets/images/logo-vertical.svg';
+import { useEffect } from 'react';
 
-import quizes from '../../mocks/quizQuestions';
+export default function MainPage({ quizes }) {
+  const { updateQuiz } = useQuizContext();
 
-console.log(quizes);
+  useEffect(() => {
+    // Atualiza o estado no contexto quando necessário
+    updateQuiz(quizes);
+  }, [quizes, updateQuiz]);
 
-export default function MainPage() {
   return (
     <Container>
       <Title>
@@ -25,14 +30,14 @@ export default function MainPage() {
       </Title>
 
       <Logo>
-        <img src={logo} alt="Paróquia Nossa Senhora da Glória" />
+        <img src={logoVertical} alt="Paróquia Nossa Senhora da Glória" />
       </Logo>
 
       <Quizes>
         {quizes.length > 0 ? (
           quizes.map((quiz) => (
-            <Link to="/questions">
-              <Button>{quiz.name}</Button>
+            <Link to="/questions" key={quiz.id}>
+              <Button onClick={() => updateQuiz(quiz)}>{quiz.name}</Button>
             </Link>
           ))
         ) : (

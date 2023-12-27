@@ -1,75 +1,102 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useQuizContext } from '../../context/QuizContext';
+import { useState, useEffect } from 'react';
 
 import { Container, PcStatusBar, Status } from './styles';
-
 import StatusBar from '../../components/StatusBar';
 import QuestionOptions from '../../components/QuestionOptions';
 import Button from '../../components/Button';
-
 import close from '../../assets/images/close-icon.svg';
 import icon from '../../assets/images/icon.svg';
 
-import quizes from '../../mocks/quizQuestions';
-
 export default function Questions() {
+  const navigate = useNavigate();
+  const { quizes } = useQuizContext();
+  const [currentQuiz, setCurrentQuiz] = useState(null);
+  const [currentQuestion, setCurrentQuestion] = useState(1);
   const [buttonData, setButtonData] = useState('');
 
   const isDisabled = !buttonData;
 
-  function handleButtonData(buttonData) {
-    setButtonData(buttonData);
+  useEffect(() => {
+    if (quizes && quizes.length === 1) {
+      const [singleQuiz] = quizes;
+      setCurrentQuiz(singleQuiz);
+    } else {
+      // Se houver um problema com os dados, redirecione ou manipule conforme necessário
+      //navigate('/error');
+    }
+  }, [quizes, navigate]);
+
+  function handleButtonData(data) {
+    setButtonData(data);
   }
 
-  function handleClick() {
-    alert(buttonData);
+  function handleNextQuestion() {
+    // Lógica para avançar para a próxima pergunta
+    setCurrentQuestion((prevQuestion) => prevQuestion + 1);
   }
 
-  let totalQuestions = 10;
-  let currentQuestion = 8;
+  function handleFinishQuiz() {
+    // Lógica para concluir o quiz
+    // Redireciona ou executa ação conforme necessário
+    navigate('/result');
+  }
 
-  quizes.length > 0 ? (
+  if (!quizes) {
+    return <h1>Erro na página</h1>;
+  }
+
+  return (
     <Container>
-      {quizes.map(({ id, name, questions }) => (
-        <div key={(id = 1)}>
-          <Status>
-            <div className="question-title">
-              <div>
-                <img src={icon} alt="Paróquia Nossa Senhora da Glória" />
-                <span>200</span>
-              </div>
-              <h1>name</h1>
-              <Link to="../">
-                <img src={close} alt="Fechar Página" />
-              </Link>
-            </div>
-
-            <div className="phone-status-bar">
-              <StatusBar
-                totalQuestions={totalQuestions}
-                currentQuestion={currentQuestion}
-              />
-            </div>
-          </Status>
-
-          <QuestionOptions handleButtonData={handleButtonData} />
+      <Status>
+        <div className="question-title">
+          <div>
+            <img src={icon} alt="Paróquia Nossa Senhora da Glória" />
+            <span>200</span>
+          </div>
+          <h1>{quizes.name}</h1>
+          <Link to="../">
+            <img src={close} alt="Fechar Página" />
+          </Link>
         </div>
-      ))}
+
+        <div className="phone-status-bar">
+          <StatusBar
+            totalQuestions={quizes.questions.length}
+            currentQuestion={currentQuestion}
+          />
+        </div>
+      </Status>
+
+      <QuestionOptions
+        handleButtonData={handleButtonData}
+        questions={quizes.questions}
+        currentQuestion={currentQuestion}
+      />
 
       <PcStatusBar>
         <Status className="pc-status-bar">
           <StatusBar
-            totalQuestions={totalQuestions}
+            totalQuestions={quizes.questions.length}
             currentQuestion={currentQuestion}
           />
         </Status>
 
-        <Button onClick={handleClick} isDisabled={isDisabled}>
-          {currentQuestion === totalQuestions ? 'CONCLUIR' : 'CONTINUE'}
+        <Button
+          isDisabled={isDisabled}
+          onClick={
+            currentQuestion === quizes.questions.length
+              ? handleFinishQuiz
+              : handleNextQuestion
+          }
+        >
+          {currentQuestion === quizes.questions.length
+            ? 'CONCLUIR'
+            : 'CONTINUE'}
         </Button>
       </PcStatusBar>
     </Container>
-  ) : (
-    <h1>Erro na página</h1>
   );
 }
