@@ -10,6 +10,8 @@ import Button from '../../components/Button';
 import close from '../../assets/images/close-icon.svg';
 import icon from '../../assets/images/icon.svg';
 
+import quizes from '../../mocks/quizQuestions';
+
 export default function Questions() {
   const [buttonData, setButtonData] = useState('');
 
@@ -26,31 +28,33 @@ export default function Questions() {
   let totalQuestions = 10;
   let currentQuestion = 8;
 
-  return (
+  quizes.length > 0 ? (
     <Container>
-      <div>
-        <Status>
-          <div className="question-title">
-            <div>
-              <img src={icon} alt="Paróquia Nossa Senhora da Glória" />
-              <span>200</span>
+      {quizes.map(({ id, name, questions }) => (
+        <div key={(id = 1)}>
+          <Status>
+            <div className="question-title">
+              <div>
+                <img src={icon} alt="Paróquia Nossa Senhora da Glória" />
+                <span>200</span>
+              </div>
+              <h1>name</h1>
+              <Link to="../">
+                <img src={close} alt="Fechar Página" />
+              </Link>
             </div>
-            <h1>Quiz Católico #156</h1>
-            <Link to="../">
-              <img src={close} alt="Fechar Página" />
-            </Link>
-          </div>
 
-          <div className="phone-status-bar">
-            <StatusBar
-              totalQuestions={totalQuestions}
-              currentQuestion={currentQuestion}
-            />
-          </div>
-        </Status>
+            <div className="phone-status-bar">
+              <StatusBar
+                totalQuestions={totalQuestions}
+                currentQuestion={currentQuestion}
+              />
+            </div>
+          </Status>
 
-        <QuestionOptions handleButtonData={handleButtonData} />
-      </div>
+          <QuestionOptions handleButtonData={handleButtonData} />
+        </div>
+      ))}
 
       <PcStatusBar>
         <Status className="pc-status-bar">
@@ -65,5 +69,7 @@ export default function Questions() {
         </Button>
       </PcStatusBar>
     </Container>
+  ) : (
+    <h1>Erro na página</h1>
   );
 }

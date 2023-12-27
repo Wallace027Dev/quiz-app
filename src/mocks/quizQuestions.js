@@ -1,8 +1,10 @@
 const quizQuestions = [
   {
-    quiz1: [
+    id: 1,
+    name: 'Quiz Católico #1',
+    questions: [
       {
-        id: '1',
+        id: 1,
         question: 'Qual o profeta que foi engolido por um grande peixe?',
         explication: 'Jonas. Referência bíblica: Jonas 1:17.',
         answer1: 'Jonas',
@@ -10,7 +12,7 @@ const quizQuestions = [
         answer3: 'Isaías',
       },
       {
-        id: '2',
+        id: 2,
         question: 'Quem derrubou a muralha de Jericó?',
         explication: 'Josué. Referência bíblica: Josué 6:1-27.',
         answer1: 'Josué',
@@ -18,7 +20,7 @@ const quizQuestions = [
         answer3: 'José',
       },
       {
-        id: '3',
+        id: 3,
         question:
           'Onde se encontra na Bíblia " O Senhor é meu pastor, nada me faltará"?',
         explication: 'Salmos 23. Referência bíblica: Salmos 23:1.',
@@ -27,7 +29,7 @@ const quizQuestions = [
         answer3: 'Gênesis 1',
       },
       {
-        id: '4',
+        id: 4,
         question: 'Qual destes nomes não era discípulo de Jesus?',
         explication: 'José.',
         answer1: 'José',
@@ -35,7 +37,7 @@ const quizQuestions = [
         answer3: 'Pedro',
       },
       {
-        id: '5',
+        id: 5,
         question: 'Em que fé que nós cremos?',
         explication:
           'Nós cremos na fé dos apóstolos, que foi revelada pelo Cristo.',
@@ -44,7 +46,7 @@ const quizQuestions = [
         answer3: 'Na fé de Abraão',
       },
       {
-        id: '6',
+        id: 6,
         question: 'Qual é a data mais importante da fé católica?',
         explication:
           'A páscoa, pois foi na cruz que Cristo nos salvou, e ressuscitou.',
@@ -53,7 +55,7 @@ const quizQuestions = [
         answer3: 'Pentecostes',
       },
       {
-        id: '7',
+        id: 7,
         question:
           'Qual livro ficou de fora da bíblia, por não nos auxiliar a entender que Jesus é o Messias?',
         explication:
@@ -63,7 +65,7 @@ const quizQuestions = [
         answer3: 'Tiago',
       },
       {
-        id: '8',
+        id: 8,
         question:
           'Embora Jesus seja Deus, sua alma é comum, como a minha e a sua.',
         explication: 'Sim. Mas a alma de Jesus é imaculada do pecado original.',
@@ -72,7 +74,7 @@ const quizQuestions = [
         answer3: 'Não, JEsus não tem alma',
       },
       {
-        id: '9',
+        id: 9,
         question:
           'O sacratíssimo corpo de Jesus ascendeu ao céu pois portava dentro de si o espírito de Cristo, ou seja, o próprio Deus',
         explication:
@@ -83,7 +85,7 @@ const quizQuestions = [
         answer3: 'O corpo de Jesus não ascendeu aos céus, só sua alma',
       },
       {
-        id: '10',
+        id: 10,
         question: 'Seria Cristo, outro Deus além do pai?',
         explication:
           'Cristo não é outro Deus além do Pai. O conceito central da Trindade ensina que o Pai, o Filho (Cristo) e o Espírito Santo são uma única e indivisível essência divina, compartilhando a mesma divindade.',
@@ -94,10 +96,13 @@ const quizQuestions = [
           'Na verdade, Cristo e o Pai são entidades completamente distintas, cada um sendo seu próprio Deus',
       },
     ],
-
-    quiz2: [
+  },
+  {
+    id: 2,
+    name: 'Quiz Católico #2',
+    questions: [
       {
-        id: '1',
+        id: 1,
         question: 'O que significa a Transubstanciação na fé católica?',
         explication:
           'Na fé católica, a Transubstanciação é o momento durante a Missa em que o pão e o vinho se transformam no corpo e no sangue de Cristo.',
@@ -214,3 +219,5 @@ const quizQuestions = [
     ],
   },
 ];
+
+export default quizQuestions;

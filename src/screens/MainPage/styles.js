@@ -70,3 +70,12 @@ export const Logo = styled.div`
     }
   }
 `;
+
+export const Quizes = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  a + a {
+    margin-top: 1rem;
+  }
+`;
