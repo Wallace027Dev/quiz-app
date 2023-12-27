@@ -4,14 +4,17 @@ export const Container = styled.div`
   display: flex;
 
   .status-bar {
-    min-width: 21.125rem;
-    max-width: 30rem;
+    min-width: 15rem;
+    max-width: 20.935rem;
     width: 100%;
     height: 1.2rem;
     background-color: var(--light-font);
     border: 1px solid var(--disabled);
     border-radius: 1rem;
     margin-right: 0.75rem;
+    @media screen and (min-width: 1024px) {
+      background-color: var(--bg-main);
+    }
   }
 
   .status-fill {

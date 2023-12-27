@@ -6,23 +6,36 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  padding: 3rem 1.25rem;
 
-  .phone-status-bar {
-    @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) {
+    padding: 3rem 1.25rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    > div {
+      padding: 3rem 1.25rem;
+    }
+
+    .phone-status-bar {
       display: none;
     }
   }
 `;
 
-export const PcStatusBar = styled.div`
+export const PcStatusBar = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 13rem;
 
+  @media screen and (min-width: 1024px) {
+    background: var(--light-font);
+    width: 100%;
+    height: 6.25rem;
+  }
+
   @media screen and (max-width: 1024px) {
-    width: 20rem;
+    width: 100%;
 
     .pc-status-bar {
       display: none;
