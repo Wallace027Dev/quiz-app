@@ -1,25 +1,25 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Quiz Católico",
+  "name": "Antes de começar, recorra à 'santíssima' ajuda! Peça a intercessão de seu Santo de devoção para iluminar sua mente e acertar em cheio.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/svg"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "favicon",
+      "type": "image/svg",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "favicon",
+      "type": "image/svg",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#060710",
+  "background_color": "#ede8e3"
 }

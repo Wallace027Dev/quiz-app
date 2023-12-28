@@ -35,7 +35,8 @@ export default function Questions() {
   }
 
   if (!quizes) {
-    return <h1>Erro na página</h1>;
+    console.log('Ocorreu um erro:');
+    navigate('../');
   }
 
   return (

@@ -1,14 +1,19 @@
 import { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import { useQuizContext } from '../../context/QuizContext';
+
 import { Container } from './styles';
+
 import check from '../../assets/images/check-icon.svg';
 import incorrect from '../../assets/images/incorrect-icon.svg';
-import { useQuizContext } from '../../context/QuizContext';
 
 export default function QuestionOptions({
   questions,
   currentQuestion,
   onIsAnswerSelectedChange,
 }) {
+  const navigate = useNavigate();
   const { updatePoints } = useQuizContext();
   const [answerSelected, setAnswerSelected] = useState(null);
   const [shuffledButtonTextArray, setShuffledButtonTextArray] = useState([]);
@@ -19,14 +24,19 @@ export default function QuestionOptions({
   onIsAnswerSelectedChange(isAnswerSelected);
 
   useEffect(() => {
-    const shuffledAnswers = shuffleArray([
-      question.answer1,
-      question.answer2,
-      question.answer3,
-    ]);
-    setShuffledButtonTextArray(shuffledAnswers);
-    setIsAnswerSelected(false); // Redefinir o estado ao mudar a pergunta
-  }, [questions, currentQuestion]);
+    try {
+      const shuffledAnswers = shuffleArray([
+        question.answer1,
+        question.answer2,
+        question.answer3,
+      ]);
+      setShuffledButtonTextArray(shuffledAnswers);
+      setIsAnswerSelected(false);
+    } catch (error) {
+      console.error('Ocorreu um erro:', error);
+      navigate('../');
+    }
+  }, [questions, currentQuestion, navigate]);
 
   function shuffleArray(array) {
     const shuffledArray = array.slice();
@@ -66,7 +76,7 @@ export default function QuestionOptions({
 
   return (
     <>
-      {questions && questions.length > 0 && (
+      {questions && questions.length > 0 ? (
         <Container key={(question.id = currentQuestion)}>
           <h1>{question.question}</h1>
 
@@ -96,6 +106,8 @@ export default function QuestionOptions({
             </p>
           )}
         </Container>
+      ) : (
+        navigate('../')
       )}
     </>
   );
