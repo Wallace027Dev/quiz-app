@@ -18,10 +18,15 @@ export default function QuestionOptions({
   const [answerSelected, setAnswerSelected] = useState(null);
   const [shuffledButtonTextArray, setShuffledButtonTextArray] = useState([]);
   const [isAnswerSelected, setIsAnswerSelected] = useState(false);
+  const [explication, setExplication] = useState('');
   const question = questions[currentQuestion - 1];
   const buttonRefs = useRef(Array.from({ length: 3 }));
 
   onIsAnswerSelectedChange(isAnswerSelected);
+
+  useEffect(() => {
+    setExplication('');
+  }, [currentQuestion, questions]);
 
   useEffect(() => {
     try {
@@ -68,6 +73,7 @@ export default function QuestionOptions({
     currentButton.innerHTML = `<span><img src=${imageSrc} /></span><p>${buttonText}</p>`;
     setAnswerSelected(answerIndex);
     setIsAnswerSelected(true);
+    setExplication(question.explication);
   }
 
   function getButtonText(index) {
@@ -102,7 +108,7 @@ export default function QuestionOptions({
                 color: '#31cd63',
               }}
             >
-              {question.explication}
+              {explication}
             </p>
           )}
         </Container>
