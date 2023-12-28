@@ -63,14 +63,14 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
-    &:not([disabled]):hover {
+    button:not([disabled]):hover {
       cursor: pointer;
       transition: 0.4s;
       background: var(--secondary);
       opacity: 0.5;
     }
 
-    &[disabled] {
+    button[disabled] {
       pointer-events: none;
     }
   }

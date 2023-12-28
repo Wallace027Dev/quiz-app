@@ -16,13 +16,11 @@ export default function Questions() {
   const navigate = useNavigate();
   const { quizes } = useQuizContext();
   const [currentQuestion, setCurrentQuestion] = useState(1);
-  const [buttonData, setButtonData] = useState('');
-
-  const isDisabled = !buttonData;
+  const [isAnswerSelected, setIsAnswerSelected] = useState(false);
   const currentQuiz = quizes;
 
-  function handleButtonData(data) {
-    setButtonData(data);
+  function handleIsAnswerSelectedChange(value) {
+    setIsAnswerSelected(value);
   }
 
   function handleNextQuestion() {
@@ -63,7 +61,7 @@ export default function Questions() {
       </Status>
 
       <QuestionOptions
-        handleButtonData={handleButtonData}
+        onIsAnswerSelectedChange={handleIsAnswerSelectedChange}
         questions={currentQuiz.questions}
         currentQuestion={currentQuestion}
       />
@@ -77,7 +75,7 @@ export default function Questions() {
         </Status>
 
         <Button
-          isDisabled={isDisabled}
+          isDisabled={!isAnswerSelected}
           onClick={
             currentQuestion === currentQuiz.questions.length
               ? handleFinishQuiz

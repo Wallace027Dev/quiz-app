@@ -2,13 +2,21 @@ import { useState, useRef, useEffect } from 'react';
 import { Container } from './styles';
 import check from '../../assets/images/check-icon.svg';
 import incorrect from '../../assets/images/incorrect-icon.svg';
+import { useQuizContext } from '../../context/QuizContext';
 
-export default function QuestionOptions({ questions, currentQuestion }) {
+export default function QuestionOptions({
+  questions,
+  currentQuestion,
+  onIsAnswerSelectedChange,
+}) {
+  const { updatePoints } = useQuizContext();
   const [answerSelected, setAnswerSelected] = useState(null);
   const [shuffledButtonTextArray, setShuffledButtonTextArray] = useState([]);
   const [isAnswerSelected, setIsAnswerSelected] = useState(false);
   const question = questions[currentQuestion - 1];
   const buttonRefs = useRef(Array.from({ length: 3 }));
+
+  onIsAnswerSelectedChange(isAnswerSelected);
 
   useEffect(() => {
     const shuffledAnswers = shuffleArray([
@@ -34,7 +42,6 @@ export default function QuestionOptions({ questions, currentQuestion }) {
 
   function handleAnswerSelected(answerIndex) {
     if (isAnswerSelected) {
-      // Se uma resposta já foi selecionada (certa ou errada), não faz nada
       return;
     }
 
@@ -45,10 +52,12 @@ export default function QuestionOptions({ questions, currentQuestion }) {
     const buttonClass =
       buttonText === question.answer1 ? 'correct' : 'incorrect';
 
+    buttonText === question.answer1 && updatePoints(1);
+
     currentButton.classList.add(buttonClass);
     currentButton.innerHTML = `<span><img src=${imageSrc} /></span><p>${buttonText}</p>`;
     setAnswerSelected(answerIndex);
-    setIsAnswerSelected(true); // Define que uma resposta foi selecionada
+    setIsAnswerSelected(true);
   }
 
   function getButtonText(index) {
