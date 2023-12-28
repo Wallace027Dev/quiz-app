@@ -1,4 +1,5 @@
 import { Container, QuizResult } from './styles';
+import { useNavigate } from 'react-router-dom';
 
 import Button from '../../components/Button';
 
@@ -6,6 +7,12 @@ import paroquia from '../../assets/images/icon.svg';
 import check from '../../assets/images/check-icon.svg';
 
 export default function Result() {
+  const navigate = useNavigate();
+
+  function handleFinishQuiz() {
+    navigate('../');
+  }
+
   return (
     <Container>
       <div>
@@ -19,7 +26,7 @@ export default function Result() {
         </QuizResult>
       </div>
 
-      <Button>FINALIZAR</Button>
+      <Button onClick={handleFinishQuiz}>FINALIZAR</Button>
     </Container>
   );
 }
