@@ -9,7 +9,7 @@ export const Container = styled.div`
   padding: 3rem 1.25rem;
   text-align: center;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@ export const Title = styled.div`
     max-width: 30rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     background: var(--secondary);
     height: 100vh;
     width: 50vw;
@@ -59,7 +59,7 @@ export const Logo = styled.div`
     height: 21rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     width: 50vw;
     display: flex;
     flex-direction: column;

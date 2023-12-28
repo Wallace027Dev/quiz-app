@@ -7,11 +7,11 @@ export const Container = styled.div`
   justify-content: space-between;
   height: 100vh;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     padding: 3rem 1.25rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     > div {
       padding: 3rem 1.25rem;
     }
@@ -22,28 +22,10 @@ export const Container = styled.div`
   }
 `;
 
-export const PcStatusBar = styled.footer`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 13rem;
-
-  @media screen and (min-width: 1024px) {
-    background: var(--light-font);
-    width: 100%;
-    height: 6.25rem;
-  }
-
-  @media screen and (max-width: 1024px) {
-    width: 100%;
-
-    .pc-status-bar {
-      display: none;
-    }
-  }
-`;
-
 export const Status = styled.div`
+  width: 100%;
+  max-width: 24rem;
+
   .question-title {
     display: flex;
     justify-content: space-between;
@@ -81,4 +63,22 @@ export const Status = styled.div`
   }
 `;
 
-export const Question = styled.div``;
+export const PcStatusBar = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @media screen and (min-width: 768px) {
+    background: var(--light-font);
+    width: 100%;
+    height: 6.25rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+
+    .pc-status-bar {
+      display: none;
+    }
+  }
+`;

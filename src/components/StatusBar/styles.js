@@ -12,7 +12,8 @@ export const Container = styled.div`
     border: 1px solid var(--disabled);
     border-radius: 1rem;
     margin-right: 0.75rem;
-    @media screen and (min-width: 1024px) {
+
+    @media screen and (min-width: 768px) {
       background-color: var(--bg-main);
     }
   }

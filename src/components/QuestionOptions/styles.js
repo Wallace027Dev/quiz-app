@@ -23,7 +23,7 @@ export const Container = styled.div`
 
     span {
       background: var(--bg-main);
-      width: 2.3rem;
+      min-width: 2.3rem;
       height: 2.3rem;
       display: flex;
       align-items: center;
@@ -33,11 +33,8 @@ export const Container = styled.div`
       font-weight: 700;
     }
 
-    &:hover {
-      cursor: pointer;
-      transition: 0.4s;
-      background: var(--secondary);
-      opacity: 0.5;
+    p {
+      max-width: 24rem;
     }
 
     & + button {
@@ -45,12 +42,50 @@ export const Container = styled.div`
     }
   }
 
-  .active {
+  @media only screen and (max-width: 425px) {
+    h1 {
+      margin: 1.5rem 0;
+    }
+
+    .question-btn {
+      height: 5rem;
+      p {
+        font-size: 14px;
+        max-width: 21rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    &:not([disabled]):hover {
+      cursor: pointer;
+      transition: 0.4s;
+      background: var(--secondary);
+      opacity: 0.5;
+    }
+
+    &[disabled] {
+      pointer-events: none;
+    }
+  }
+
+  .correct {
     background: var(--primary);
 
     span {
       background: var(--light-font);
       opacity: 1;
     }
+  }
+
+  .incorrect {
+    background: red;
+    font-weight: 700;
   }
 `;

@@ -1,33 +1,25 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useQuizContext } from '../../context/QuizContext';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import { Container, PcStatusBar, Status } from './styles';
+
 import StatusBar from '../../components/StatusBar';
 import QuestionOptions from '../../components/QuestionOptions';
 import Button from '../../components/Button';
+
 import close from '../../assets/images/close-icon.svg';
 import icon from '../../assets/images/icon.svg';
 
 export default function Questions() {
   const navigate = useNavigate();
   const { quizes } = useQuizContext();
-  const [currentQuiz, setCurrentQuiz] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [buttonData, setButtonData] = useState('');
 
   const isDisabled = !buttonData;
-
-  useEffect(() => {
-    if (quizes && quizes.length === 1) {
-      const [singleQuiz] = quizes;
-      setCurrentQuiz(singleQuiz);
-    } else {
-      // Se houver um problema com os dados, redirecione ou manipule conforme necessário
-      //navigate('/error');
-    }
-  }, [quizes, navigate]);
+  const currentQuiz = quizes;
 
   function handleButtonData(data) {
     setButtonData(data);
@@ -56,7 +48,7 @@ export default function Questions() {
             <img src={icon} alt="Paróquia Nossa Senhora da Glória" />
             <span>200</span>
           </div>
-          <h1>{quizes.name}</h1>
+          <h1>{currentQuiz.name}</h1>
           <Link to="../">
             <img src={close} alt="Fechar Página" />
           </Link>
@@ -64,7 +56,7 @@ export default function Questions() {
 
         <div className="phone-status-bar">
           <StatusBar
-            totalQuestions={quizes.questions.length}
+            totalQuestions={currentQuiz.questions.length}
             currentQuestion={currentQuestion}
           />
         </div>
@@ -72,14 +64,14 @@ export default function Questions() {
 
       <QuestionOptions
         handleButtonData={handleButtonData}
-        questions={quizes.questions}
+        questions={currentQuiz.questions}
         currentQuestion={currentQuestion}
       />
 
       <PcStatusBar>
         <Status className="pc-status-bar">
           <StatusBar
-            totalQuestions={quizes.questions.length}
+            totalQuestions={currentQuiz.questions.length}
             currentQuestion={currentQuestion}
           />
         </Status>
@@ -87,12 +79,12 @@ export default function Questions() {
         <Button
           isDisabled={isDisabled}
           onClick={
-            currentQuestion === quizes.questions.length
+            currentQuestion === currentQuiz.questions.length
               ? handleFinishQuiz
               : handleNextQuestion
           }
         >
-          {currentQuestion === quizes.questions.length
+          {currentQuestion === currentQuiz.questions.length
             ? 'CONCLUIR'
             : 'CONTINUE'}
         </Button>

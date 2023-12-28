@@ -105,7 +105,7 @@ const quizQuestions = [
         id: 1,
         question: 'O que significa a Transubstanciação na fé católica?',
         explication:
-          'Na fé católica, a Transubstanciação é o momento durante a Missa em que o pão e o vinho se transformam no corpo e no sangue de Cristo.',
+          'Na fé católica, não apenas simbolicamente, mas por obra de um mistério da fé, a Transubstanciação é o pão e o vinho transformados no corpo e no sangue de Cristo.',
         answer1:
           'A Transubstanciação é o momento em que o pão e o vinho se transformam no corpo e no sangue de Cristo',
         answer2:

@@ -31,19 +31,19 @@ export default function MainPage({ quizes }) {
 
       <Logo>
         <img src={logoVertical} alt="Paróquia Nossa Senhora da Glória" />
-      </Logo>
 
-      <Quizes>
-        {quizes.length > 0 ? (
-          quizes.map((quiz) => (
-            <Link to="/questions" key={quiz.id}>
-              <Button onClick={() => updateQuiz(quiz)}>{quiz.name}</Button>
-            </Link>
-          ))
-        ) : (
-          <h1>Algo de errado aconteceu!</h1>
-        )}
-      </Quizes>
+        <Quizes>
+          {quizes.length > 0 ? (
+            quizes.map((quiz) => (
+              <Link to="/questions" key={quiz.id}>
+                <Button onClick={() => updateQuiz(quiz)}>{quiz.name}</Button>
+              </Link>
+            ))
+          ) : (
+            <h1>Algo de errado aconteceu!</h1>
+          )}
+        </Quizes>
+      </Logo>
     </Container>
   );
 }
