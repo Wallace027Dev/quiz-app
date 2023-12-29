@@ -21,7 +21,7 @@ export const Container = styled.div`
   .status-fill {
     border-radius: 1rem;
     height: 100%;
-    width: ${(props) => props.fillPercentage}%;
+    width: ${({ fillPercentage }) => `${fillPercentage}%`};
     background-color: var(--primary);
     transition: width 0.5s ease-in-out;
   }

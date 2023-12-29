@@ -1,7 +1,7 @@
 import { Container } from './styles';
 
-export default function StatusBar({ currentQuestion, totalQuestions }) {
-  let fillPercentage = (currentQuestion / totalQuestions) * 100;
+const StatusBar = ({ currentQuestion, totalQuestions }) => {
+  const fillPercentage = (currentQuestion / totalQuestions) * 100;
 
   return (
     <Container fillPercentage={fillPercentage}>
@@ -13,4 +13,6 @@ export default function StatusBar({ currentQuestion, totalQuestions }) {
       </span>
     </Container>
   );
-}
+};
+
+export default StatusBar;
