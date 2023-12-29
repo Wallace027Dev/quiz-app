@@ -20,7 +20,7 @@ export default function Result() {
     <Container>
       <div>
         <img src={paroquia} alt="Paróquia Nossa Senhora da Glória" />
-        <h1>Resultado do Quiz #156</h1>
+        <h1>Resultado do Quiz</h1>
         <QuizResult>
           <img src={check} alt="Ícone de Correto" />
           <h1>Pontuação final</h1>

@@ -31,6 +31,7 @@ export const Status = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.5rem;
 
     div {
       background: var(--light-font);
