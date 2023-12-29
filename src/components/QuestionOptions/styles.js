@@ -13,8 +13,7 @@ export const Container = styled.div`
   }
 
   .question-btn {
-    width: 100%;
-    max-width: 28rem;
+    width: 27rem;
     height: 3.75rem;
     background: var(--light-font);
     border-radius: 0.5rem;
@@ -39,6 +38,7 @@ export const Container = styled.div`
 
     p {
       max-width: 24rem;
+      text-align: start;
     }
 
     & + button {
@@ -52,6 +52,7 @@ export const Container = styled.div`
     }
 
     .question-btn {
+      max-width: 18rem;
       height: 4rem;
       p {
         font-size: 14px;
@@ -61,8 +62,12 @@ export const Container = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    p {
-      font-size: 14px;
+    .question-btn {
+      width: 21rem;
+
+      p {
+        font-size: 14px;
+      }
     }
   }
 

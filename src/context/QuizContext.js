@@ -21,7 +21,13 @@ export function QuizProvider({ children }) {
 
   return (
     <QuizContext.Provider
-      value={{ quizes, updatePoints, updateQuiz, correctAnswer }}
+      value={{
+        quizes,
+        correctAnswer,
+        setCorrectAnswer,
+        updatePoints,
+        updateQuiz,
+      }}
     >
       {children}
     </QuizContext.Provider>

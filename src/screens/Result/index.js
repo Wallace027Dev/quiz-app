@@ -9,9 +9,10 @@ import { useQuizContext } from '../../context/QuizContext';
 
 export default function Result() {
   const navigate = useNavigate();
-  const { correctAnswer } = useQuizContext();
+  const { correctAnswer, setCorrectAnswer } = useQuizContext();
 
   function handleFinishQuiz() {
+    setCorrectAnswer(0);
     navigate('../');
   }
 
