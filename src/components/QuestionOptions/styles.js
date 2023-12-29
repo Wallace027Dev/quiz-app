@@ -4,7 +4,7 @@ export const Container = styled.div`
   max-width: 31.875rem;
 
   h1 {
-    margin: 2.75rem 0 4rem 0;
+    margin: 2.75rem 0 2.75rem 0;
     font-size: 1.375rem;
     font-weight: 700;
   }
@@ -48,7 +48,7 @@ export const Container = styled.div`
     }
 
     .question-btn {
-      height: 5rem;
+      height: 4rem;
       p {
         font-size: 14px;
         max-width: 21rem;

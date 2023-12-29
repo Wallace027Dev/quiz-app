@@ -4,14 +4,15 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   height: 100vh;
 
   @media screen and (max-width: 768px) {
+    justify-content: space-around;
     padding: 3rem 1.25rem;
   }
 
   @media screen and (min-width: 768px) {
+    justify-content: space-between;
     > div {
       padding: 3rem 1.25rem;
     }
@@ -30,7 +31,6 @@ export const Status = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2.25rem;
 
     div {
       background: var(--light-font);
@@ -67,6 +67,10 @@ export const PcStatusBar = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  button {
+    margin: 1rem 0;
+  }
 
   @media screen and (min-width: 768px) {
     background: var(--light-font);
