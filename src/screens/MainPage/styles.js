@@ -19,7 +19,7 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   font-weight: 700;
-  font-size: 1.48rem;
+  font-size: 1.2rem;
   color: var(--dark-font);
 
   span {
@@ -32,12 +32,13 @@ export const Title = styled.div`
 
   p {
     font-size: 1rem;
-    margin-top: 1rem;
+    margin: 0.5rem 0;
     opacity: 0.8;
     max-width: 30rem;
   }
 
   @media screen and (min-width: 768px) {
+    font-size: 1.48rem;
     background: var(--secondary);
     height: 100vh;
     width: 50vw;
@@ -55,8 +56,8 @@ export const Title = styled.div`
 
 export const Logo = styled.div`
   img {
-    margin-bottom: 1rem;
-    height: 21rem;
+    margin: 1rem;
+    height: 18rem;
   }
 
   @media screen and (min-width: 768px) {
@@ -64,6 +65,7 @@ export const Logo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3rem;
 
     img {
       height: 25rem;
@@ -75,7 +77,17 @@ export const Quizes = styled.div`
   display: flex;
   flex-direction: column;
 
-  a + a {
-    margin-top: 1rem;
+  a {
+    flex-grow: 1;
+    margin: 0 0.25rem 1rem 0.25rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    a {
+      flex-basis: calc(50% - 0.5rem);
+    }
   }
 `;
