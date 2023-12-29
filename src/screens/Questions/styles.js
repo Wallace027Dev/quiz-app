@@ -77,7 +77,7 @@ export const PcStatusBar = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 1rem 0;
+  margin-top: 1rem;
 
   @media screen and (min-width: 768px) {
     background: var(--light-font);
