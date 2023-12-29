@@ -16,6 +16,11 @@ export const Container = styled.div`
     font-size: 1.375rem;
     margin: 2.55rem 0 3.6rem 0;
   }
+
+  p {
+    margin-top: 1rem;
+    max-width: 20rem;
+  }
 `;
 
 export const QuizResult = styled.div`

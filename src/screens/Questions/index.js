@@ -11,10 +11,11 @@ import Button from '../../components/Button';
 
 import close from '../../assets/images/close-icon.svg';
 import icon from '../../assets/images/icon.svg';
+import correct from '../../assets/images/check-icon.svg';
 
 export default function Questions() {
   const navigate = useNavigate();
-  const { quizes } = useQuizContext();
+  const { quizes, correctAnswer } = useQuizContext();
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [isAnswerSelected, setIsAnswerSelected] = useState(false);
   const currentQuiz = quizes;
@@ -45,7 +46,9 @@ export default function Questions() {
         <div className="question-title">
           <div>
             <img src={icon} alt="Paróquia Nossa Senhora da Glória" />
-            <span>200</span>
+            <span>
+              {correctAnswer}0 <img src={correct} alt="Respostas corretas" />
+            </span>
           </div>
           <h1>{currentQuiz.name}</h1>
           <Link to="../">

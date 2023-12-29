@@ -35,18 +35,26 @@ export const Status = styled.div`
     div {
       background: var(--light-font);
       border-radius: 0.25rem;
-      padding: 0.25rem 0.5rem;
+      padding: 0.25rem 0.35rem;
       display: flex;
       align-items: center;
+      justify-content: center;
 
-      img {
-        height: 1.5rem;
+      > img {
+        height: 1.6rem;
         margin-right: 0.25rem;
       }
 
       span {
         font-size: 0.875rem;
         font-weight: 700;
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 1.2rem;
+          margin: 0;
+        }
       }
     }
 

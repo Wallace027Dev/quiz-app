@@ -31,7 +31,7 @@ const quizQuestions = [
       {
         id: 4,
         question: 'Qual destes nomes não era discípulo de Jesus?',
-        explication: 'José.',
+        explication: 'José morreu antes de Jesus começar seu ministério.',
         answer1: 'José',
         answer2: 'João',
         answer3: 'Pedro',
@@ -59,7 +59,7 @@ const quizQuestions = [
         question:
           'Qual livro ficou de fora da bíblia, por não nos auxiliar a entender que Jesus é o Messias?',
         explication:
-          'Por ser apócrifo, ou seja, não ter sido reconhecido como um ensinamento de Jesus Cristo.',
+          'Por ser apócrifo, ou seja, não ter sido reconhecido como um ensinamento de Jesus Cristo, ficou de fora da bíblia.',
         answer1: 'Tomé',
         answer2: 'João',
         answer3: 'Tiago',
@@ -71,7 +71,7 @@ const quizQuestions = [
         explication: 'Sim. Mas a alma de Jesus é imaculada do pecado original.',
         answer1: 'Sim. A alma de Jesus faz parte de sua natureza humana',
         answer2: 'Sim, mas Jesus tem duas almas, uma divina e outra humana',
-        answer3: 'Não, JEsus não tem alma',
+        answer3: 'Não, Jesus não tem alma',
       },
       {
         id: 9,
@@ -81,7 +81,7 @@ const quizQuestions = [
           'Falso. Pois o corpo de Jesus não porta o próprio Deus, mas é o próprio Deus encarnado.',
         answer1: 'Falso. A afirmação é incorreta, pois Jesus é o próprio Deus',
         answer2:
-          'Verdadeiro. Pois o corpo de Jesus é apenas um portador do espírito de Cristo',
+          'Verdadeiro. Mas o corpo de Jesus é apenas um portador do espírito de Cristo',
         answer3: 'O corpo de Jesus não ascendeu aos céus, só sua alma',
       },
       {

@@ -20,7 +20,9 @@ export function QuizProvider({ children }) {
   };
 
   return (
-    <QuizContext.Provider value={{ quizes, updatePoints, updateQuiz }}>
+    <QuizContext.Provider
+      value={{ quizes, updatePoints, updateQuiz, correctAnswer }}
+    >
       {children}
     </QuizContext.Provider>
   );
