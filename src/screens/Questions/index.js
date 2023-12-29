@@ -35,8 +35,7 @@ export default function Questions() {
     navigate('/result');
   }
 
-  if (!quizes) {
-    console.log('Ocorreu um erro:');
+  if (!quizes || !currentQuestion) {
     navigate('../');
   }
 
@@ -58,7 +57,7 @@ export default function Questions() {
 
         <div className="phone-status-bar">
           <StatusBar
-            totalQuestions={currentQuiz.questions.length}
+            totalQuestions={currentQuiz.questions?.length}
             currentQuestion={currentQuestion}
           />
         </div>
@@ -73,7 +72,7 @@ export default function Questions() {
       <PcStatusBar>
         <Status className="pc-status-bar">
           <StatusBar
-            totalQuestions={currentQuiz.questions.length}
+            totalQuestions={currentQuiz.questions?.length}
             currentQuestion={currentQuestion}
           />
         </Status>
@@ -81,12 +80,12 @@ export default function Questions() {
         <Button
           isDisabled={!isAnswerSelected}
           onClick={
-            currentQuestion === currentQuiz.questions.length
+            currentQuestion === currentQuiz.questions?.length
               ? handleFinishQuiz
               : handleNextQuestion
           }
         >
-          {currentQuestion === currentQuiz.questions.length
+          {currentQuestion === currentQuiz.questions?.length
             ? 'CONCLUIR'
             : 'CONTINUE'}
         </Button>

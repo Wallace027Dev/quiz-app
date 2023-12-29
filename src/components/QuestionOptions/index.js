@@ -19,8 +19,9 @@ export default function QuestionOptions({
   const [shuffledButtonTextArray, setShuffledButtonTextArray] = useState([]);
   const [isAnswerSelected, setIsAnswerSelected] = useState(false);
   const [explication, setExplication] = useState('');
-  const question = questions[currentQuestion - 1];
   const buttonRefs = useRef(Array.from({ length: 3 }));
+
+  const question = questions ? questions[currentQuestion - 1] : null;
 
   onIsAnswerSelectedChange(isAnswerSelected);
 
@@ -31,9 +32,9 @@ export default function QuestionOptions({
   useEffect(() => {
     try {
       const shuffledAnswers = shuffleArray([
-        question.answer1,
-        question.answer2,
-        question.answer3,
+        question?.answer1,
+        question?.answer2,
+        question?.answer3,
       ]);
       setShuffledButtonTextArray(shuffledAnswers);
       setIsAnswerSelected(false);
@@ -82,9 +83,16 @@ export default function QuestionOptions({
 
   return (
     <>
-      {questions && questions.length > 0 ? (
-        <Container key={(question.id = currentQuestion)}>
-          <h1>{question.question}</h1>
+      {questions && questions?.length > 0 ? (
+        <Container
+          key={
+            (questions &&
+              questions.length > 0 &&
+              questions[currentQuestion - 1]?.id) ||
+            currentQuestion
+          }
+        >
+          <h1>{question?.question}</h1>
 
           {shuffledButtonTextArray.map((buttonText, index) => (
             <button

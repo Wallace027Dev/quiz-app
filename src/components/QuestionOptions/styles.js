@@ -2,15 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   max-width: 31.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
-    margin: 2.75rem 0 2.75rem 0;
+    margin-bottom: 2.75rem;
     font-size: 1.375rem;
     font-weight: 700;
   }
 
   .question-btn {
     width: 100%;
+    max-width: 28rem;
     height: 3.75rem;
     background: var(--light-font);
     border-radius: 0.5rem;

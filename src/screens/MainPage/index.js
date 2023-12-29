@@ -33,7 +33,7 @@ export default function MainPage({ quizes }) {
         <img src={logoVertical} alt="Paróquia Nossa Senhora da Glória" />
 
         <Quizes>
-          {quizes.length > 0 ? (
+          {quizes?.length > 0 ? (
             quizes.map((quiz) => (
               <Link to="/questions" key={quiz.id}>
                 <Button onClick={() => updateQuiz(quiz)}>{quiz.name}</Button>

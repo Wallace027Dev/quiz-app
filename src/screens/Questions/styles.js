@@ -25,7 +25,7 @@ export const Container = styled.div`
 
 export const Status = styled.div`
   width: 100%;
-  max-width: 24rem;
+  max-width: 28rem;
 
   .question-title {
     display: flex;
