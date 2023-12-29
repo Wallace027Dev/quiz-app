@@ -1,17 +1,14 @@
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useQuizContext } from '../../context/QuizContext';
-
 import { Container, Logo, Quizes, Title } from './styles';
 import Button from '../../components/Button';
-
 import logoVertical from '../../assets/images/logo-vertical.svg';
-import { useEffect } from 'react';
 
 export default function MainPage({ quizes }) {
   const { updateQuiz } = useQuizContext();
 
   useEffect(() => {
-    // Atualiza o estado no contexto quando necessário
     updateQuiz(quizes);
   }, [quizes, updateQuiz]);
 
