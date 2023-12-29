@@ -23,8 +23,8 @@ export default function Result() {
         <h1>Resultado do Quiz #156</h1>
         <QuizResult>
           <img src={check} alt="Ícone de Correto" />
-          <h1>Questões Corretas</h1>
-          <span>{correctAnswer}</span>
+          <h1>Pontuação final</h1>
+          <span>{correctAnswer}0%</span>
         </QuizResult>
 
         {correctAnswer === 10 ? (

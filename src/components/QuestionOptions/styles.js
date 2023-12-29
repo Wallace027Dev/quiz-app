@@ -14,7 +14,7 @@ export const Container = styled.div`
 
   .question-btn {
     width: 27rem;
-    height: 3.75rem;
+    min-height: 3.75rem;
     background: var(--light-font);
     border-radius: 0.5rem;
     border: none;
@@ -53,7 +53,7 @@ export const Container = styled.div`
 
     .question-btn {
       max-width: 18rem;
-      height: 4rem;
+
       p {
         font-size: 14px;
         max-width: 21rem;
