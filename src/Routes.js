@@ -1,16 +1,14 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QuizProvider } from './context/QuizContext';
-
 import MainPage from './screens/MainPage';
 import Questions from './screens/Questions';
 import Result from './screens/Result';
-
 import quizes from './mocks/quizQuestions';
 
-export function AppRoutes() {
+function AppRoutes() {
   return (
-    <BrowserRouter>
+    <Router>
       <QuizProvider>
         <Routes>
           <Route path="/" element={<MainPage quizes={quizes} />} />
@@ -18,6 +16,8 @@ export function AppRoutes() {
           <Route path="/result" element={<Result />} />
         </Routes>
       </QuizProvider>
-    </BrowserRouter>
+    </Router>
   );
 }
+
+export default AppRoutes;
