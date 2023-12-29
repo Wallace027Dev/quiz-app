@@ -1,10 +1,7 @@
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import { useQuizContext } from '../../context/QuizContext';
-
 import { Container } from './styles';
-
 import check from '../../assets/images/check-icon.svg';
 import incorrect from '../../assets/images/incorrect-icon.svg';
 
@@ -22,8 +19,6 @@ export default function QuestionOptions({
   const buttonRefs = useRef(Array.from({ length: 3 }));
 
   const question = questions ? questions[currentQuestion - 1] : null;
-
-  onIsAnswerSelectedChange(isAnswerSelected);
 
   useEffect(() => {
     setExplication('');
@@ -44,7 +39,7 @@ export default function QuestionOptions({
     }
   }, [questions, currentQuestion, navigate]);
 
-  function shuffleArray(array) {
+  const shuffleArray = (array) => {
     const shuffledArray = array.slice();
     for (let i = shuffledArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -54,9 +49,9 @@ export default function QuestionOptions({
       ];
     }
     return shuffledArray;
-  }
+  };
 
-  function handleAnswerSelected(answerIndex) {
+  const handleAnswerSelected = (answerIndex) => {
     if (isAnswerSelected) {
       return;
     }
@@ -75,11 +70,10 @@ export default function QuestionOptions({
     setAnswerSelected(answerIndex);
     setIsAnswerSelected(true);
     setExplication(question.explication);
-  }
+    onIsAnswerSelectedChange(true);
+  };
 
-  function getButtonText(index) {
-    return shuffledButtonTextArray[index];
-  }
+  const getButtonText = (index) => shuffledButtonTextArray[index];
 
   return (
     <>
@@ -111,7 +105,6 @@ export default function QuestionOptions({
             <p
               style={{
                 marginTop: 16,
-                opacity: 0.5,
                 fontSize: 14,
                 color: '#31cd63',
               }}

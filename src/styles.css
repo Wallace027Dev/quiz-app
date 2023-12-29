@@ -10,6 +10,7 @@ html {
   font-family: 'Roboto', sans-serif;
   background: var(--bg-main);
   text-align: center;
+  color: var(--dark-font);
 }
 
 :root {

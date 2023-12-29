@@ -14,7 +14,7 @@ export const Container = styled.div`
   @media screen and (min-width: 768px) {
     justify-content: space-between;
     > div {
-      padding: 3rem 1.25rem;
+      padding-top: 1rem;
     }
 
     .phone-status-bar {

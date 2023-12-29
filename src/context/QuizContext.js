@@ -11,25 +11,22 @@ export function QuizProvider({ children }) {
   const [correctAnswer, setCorrectAnswer] = useState(0);
 
   const updatePoints = (updatedPoints) => {
-    setCorrectAnswer(correctAnswer + updatedPoints);
+    setCorrectAnswer((prevPoints) => prevPoints + updatedPoints);
   };
 
   const updateQuiz = (updatedQuiz) => {
-    // Lógica para atualizar o array de quizes
     setQuizes(updatedQuiz);
   };
 
+  const contextValue = {
+    quizes,
+    correctAnswer,
+    setCorrectAnswer,
+    updatePoints,
+    updateQuiz,
+  };
+
   return (
-    <QuizContext.Provider
-      value={{
-        quizes,
-        correctAnswer,
-        setCorrectAnswer,
-        updatePoints,
-        updateQuiz,
-      }}
-    >
-      {children}
-    </QuizContext.Provider>
+    <QuizContext.Provider value={contextValue}>{children}</QuizContext.Provider>
   );
 }

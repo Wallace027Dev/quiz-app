@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useQuizContext } from '../../context/QuizContext';
-import { useState } from 'react';
-
 import { Container, PcStatusBar, Status } from './styles';
-
 import StatusBar from '../../components/StatusBar';
 import QuestionOptions from '../../components/QuestionOptions';
 import Button from '../../components/Button';
-
 import close from '../../assets/images/close-icon.svg';
 import icon from '../../assets/images/icon.svg';
 import correct from '../../assets/images/check-icon.svg';
@@ -20,24 +16,18 @@ export default function Questions() {
   const [isAnswerSelected, setIsAnswerSelected] = useState(false);
   const currentQuiz = quizes;
 
-  function handleIsAnswerSelectedChange(value) {
-    setIsAnswerSelected(value);
-  }
+  useEffect(() => {
+    if (!quizes || !currentQuestion) {
+      navigate('../');
+    }
+  }, [quizes, currentQuestion, navigate]);
 
-  function handleNextQuestion() {
-    // Lógica para avançar para a próxima pergunta
+  const handleIsAnswerSelectedChange = (value) => setIsAnswerSelected(value);
+
+  const handleNextQuestion = () =>
     setCurrentQuestion((prevQuestion) => prevQuestion + 1);
-  }
 
-  function handleFinishQuiz() {
-    // Lógica para concluir o quiz
-    // Redireciona ou executa ação conforme necessário
-    navigate('/result');
-  }
-
-  if (!quizes || !currentQuestion) {
-    navigate('../');
-  }
+  const handleFinishQuiz = () => navigate('/result');
 
   return (
     <Container>
