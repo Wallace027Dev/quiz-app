@@ -13,6 +13,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     justify-content: space-between;
+
     > div {
       padding-top: 1rem;
     }
@@ -76,10 +77,7 @@ export const PcStatusBar = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  button {
-    margin: 1rem 0;
-  }
+  margin: 1rem 0;
 
   @media screen and (min-width: 768px) {
     background: var(--light-font);
