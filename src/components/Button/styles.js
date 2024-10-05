@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.button`
   border-radius: 0.47rem;
-  background: ${({ isDisabled }) =>
-    isDisabled ? 'var(--gray)' : 'var(--secondary)'};
-  color: var(--light-font);
+  background: ${({ isDisabled, theme }) =>
+    isDisabled ? theme.colors.disabled : theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.lightFont};
   font-weight: 700;
-  font-size: 1rem;
+  font-size: ${({ theme }) => `${theme.typography.fontSize}rem`};
   border: none;
   height: 3.75rem !important;
   width: 100%;
@@ -20,6 +20,6 @@ export const Container = styled.button`
 
   &:hover:not(:disabled) {
     cursor: pointer;
-    background: var(--primary);
+    background: ${({ theme }) => theme.colors.primary};
   }
 `;

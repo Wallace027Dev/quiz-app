@@ -1,27 +1,27 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useQuizContext } from '../../context/QuizContext';
-import { Container } from './styles';
-import check from '../../assets/images/check-icon.svg';
-import incorrect from '../../assets/images/incorrect-icon.svg';
+import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { useQuizContext } from "../../context/QuizContext";
+import { Container, ExplicationPar } from "./styles";
+import check from "../../assets/images/check-icon.svg";
+import incorrect from "../../assets/images/incorrect-icon.svg";
 
 export default function QuestionOptions({
   questions,
   currentQuestion,
-  onIsAnswerSelectedChange,
+  onIsAnswerSelectedChange
 }) {
   const navigate = useNavigate();
   const { updatePoints } = useQuizContext();
   const [answerSelected, setAnswerSelected] = useState(null);
   const [shuffledButtonTextArray, setShuffledButtonTextArray] = useState([]);
   const [isAnswerSelected, setIsAnswerSelected] = useState(false);
-  const [explication, setExplication] = useState('');
+  const [explication, setExplication] = useState("");
   const buttonRefs = useRef(Array.from({ length: 3 }));
 
   const question = questions ? questions[currentQuestion - 1] : null;
 
   useEffect(() => {
-    setExplication('');
+    setExplication("");
   }, [currentQuestion, questions]);
 
   useEffect(() => {
@@ -29,13 +29,13 @@ export default function QuestionOptions({
       const shuffledAnswers = shuffleArray([
         question?.answer1,
         question?.answer2,
-        question?.answer3,
+        question?.answer3
       ]);
       setShuffledButtonTextArray(shuffledAnswers);
       setIsAnswerSelected(false);
     } catch (error) {
-      console.error('Ocorreu um erro:', error);
-      navigate('../');
+      console.error("Ocorreu um erro:", error);
+      navigate("../");
     }
   }, [questions, currentQuestion, navigate]);
 
@@ -45,7 +45,7 @@ export default function QuestionOptions({
       const j = Math.floor(Math.random() * (i + 1));
       [shuffledArray[i], shuffledArray[j]] = [
         shuffledArray[j],
-        shuffledArray[i],
+        shuffledArray[i]
       ];
     }
     return shuffledArray;
@@ -61,7 +61,7 @@ export default function QuestionOptions({
 
     const imageSrc = buttonText === question.answer1 ? check : incorrect;
     const buttonClass =
-      buttonText === question.answer1 ? 'correct' : 'incorrect';
+      buttonText === question.answer1 ? "correct" : "incorrect";
 
     buttonText === question.answer1 && updatePoints(1);
 
@@ -94,7 +94,7 @@ export default function QuestionOptions({
               ref={(el) => (buttonRefs.current[index] = el)}
               onClick={() => handleAnswerSelected(index)}
               className="question-btn"
-              disabled={isAnswerSelected} // Desativa todos os botões se uma resposta foi selecionada
+              disabled={isAnswerSelected}
             >
               <span>{String.fromCharCode(65 + index)}</span>
               <p>{buttonText}</p>
@@ -102,19 +102,11 @@ export default function QuestionOptions({
           ))}
 
           {answerSelected !== null && (
-            <p
-              style={{
-                marginTop: 16,
-                fontSize: 14,
-                color: '#31cd63',
-              }}
-            >
-              {explication}
-            </p>
+            <ExplicationPar>{explication}</ExplicationPar>
           )}
         </Container>
       ) : (
-        navigate('../')
+        navigate("../")
       )}
     </>
   );

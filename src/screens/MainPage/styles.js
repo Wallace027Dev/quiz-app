@@ -20,13 +20,13 @@ export const Container = styled.div`
 export const Title = styled.div`
   font-weight: 700;
   font-size: 1.2rem;
-  color: var(--dark-font);
+  color: ${({ theme }) => theme.colors.lightFont};
 
   span {
     width: 5.2rem;
     height: 2.5rem;
     border-radius: 0.47rem;
-    background: var(--secondary);
+    background: ${({ theme }) => theme.colors.secondary};
     padding: 0.16rem 0.68rem;
   }
 
@@ -39,20 +39,21 @@ export const Title = styled.div`
 
   @media screen and (min-width: 768px) {
     font-size: 1.48rem;
-    background: var(--secondary);
+    background: ${({ theme }) => theme.colors.secondary};
     height: 100vh;
     width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: ${({ theme }) => theme.colors.background};
 
     span {
-      background: var(--tertiary);
+      background: ${({ theme }) => theme.colors.tertiary};
     }
   }
 `;
+
 
 export const Logo = styled.div`
   img {

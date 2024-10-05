@@ -1,8 +1,15 @@
-import AppRoutes from './Routes';
-import './styles.css';
+import { ThemeProvider } from "styled-components";
+import designSystem from "./design/designSystem";
+import GlobalStyle from "./globalStyles";
+import AppRoutes from "./Routes";
 
 function App() {
-  return <AppRoutes />;
+  return (
+    <ThemeProvider theme={designSystem}>
+      <GlobalStyle />
+      <AppRoutes />
+    </ThemeProvider>
+  );
 }
 
 export default App;

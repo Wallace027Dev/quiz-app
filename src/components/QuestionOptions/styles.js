@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 31.875rem;
@@ -8,24 +8,24 @@ export const Container = styled.div`
 
   h1 {
     margin-bottom: 2.75rem;
-    font-size: 1.375rem;
+    font-size: ${({ theme }) => `${theme.typography.fontSize * 1.35}rem`};
     font-weight: 700;
   }
 
   .question-btn {
     width: 27rem;
     min-height: 3.75rem;
-    background: var(--light-font);
+    background: ${({ theme }) => theme.typography.fontSizerem};
     border-radius: 0.5rem;
     border: none;
     display: flex;
     align-items: center;
     justify-content: start;
     padding: 0.75rem 1rem;
-    font-size: 1rem;
+    font-size: ${({ theme }) => `${theme.typography.fontSize}rem`};
 
     span {
-      background: var(--bg-main);
+      background: ${({ theme }) => theme.colors.background};
       min-width: 2.3rem;
       height: 2.3rem;
       display: flex;
@@ -55,7 +55,7 @@ export const Container = styled.div`
       max-width: 18rem;
 
       p {
-        font-size: 14px;
+        font-size: ${({ theme }) => `${theme.typography.fontSize * 0.9}rem`};
         max-width: 21rem;
       }
     }
@@ -66,7 +66,7 @@ export const Container = styled.div`
       width: 21rem;
 
       p {
-        font-size: 14px;
+        font-size: ${({ theme }) => `${theme.typography.fontSize * 0.9}rem`};
       }
     }
   }
@@ -75,7 +75,7 @@ export const Container = styled.div`
     button:not([disabled]):hover {
       cursor: pointer;
       transition: 0.4s;
-      background: var(--secondary);
+      background: ${({ theme }) => theme.colors.secondary};
       opacity: 0.5;
     }
 
@@ -85,10 +85,10 @@ export const Container = styled.div`
   }
 
   .correct {
-    background: var(--primary);
+    background: ${({ theme }) => theme.colors.primary};
 
     span {
-      background: var(--light-font);
+      background: ${({ theme }) => theme.colors.lightFont};
       opacity: 1;
     }
   }
@@ -97,4 +97,10 @@ export const Container = styled.div`
     background: red;
     font-weight: 700;
   }
+`;
+
+export const ExplicationPar = styled.p`
+  margin-top: 16;
+  font-size: 14;
+  color: ${({ theme }) => theme.colors.primary};
 `;
