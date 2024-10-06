@@ -5,7 +5,7 @@ export const texts = {
   },
 
   headings: {
-    title: "Quiz de Programação",
+    title: "Programação",
     welcome: "Bem-vindo ao Quiz de Programação!"
   },
 

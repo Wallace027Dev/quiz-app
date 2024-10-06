@@ -63,6 +63,7 @@ export const Logo = styled.div`
   img {
     margin-bottom: 3rem;
     height: 18rem;
+    border-radius: 24px;
   }
 
   @media screen and (min-width: 768px) {
@@ -80,19 +81,12 @@ export const Logo = styled.div`
 
 export const Quizes = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: column;
-
-  a {
-    flex-grow: 1;
-    margin: 0 0.25rem 1rem 0.25rem;
-  }
+  gap: 1rem 2rem;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
-
-    a {
-      flex-basis: calc(50% - 0.5rem);
-    }
   }
 `;
