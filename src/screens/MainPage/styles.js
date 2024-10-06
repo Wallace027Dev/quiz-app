@@ -20,7 +20,8 @@ export const Container = styled.div`
 export const Title = styled.div`
   font-weight: 700;
   font-size: 1.2rem;
-  color: ${({ theme }) => theme.colors.lightFont};
+  padding: 0 2rem;
+  color: ${({ theme }) => theme.colors.darkFont};
 
   h1 {
     margin-bottom: 2rem;
@@ -30,7 +31,7 @@ export const Title = styled.div`
     width: 5.2rem;
     height: 2.5rem;
     border-radius: 0.47rem;
-    background: ${({ theme }) => theme.colors.secondary};
+    background: ${({ theme }) => theme.colors.primary};
     padding: 0.16rem 0.68rem;
   }
 
@@ -51,17 +52,13 @@ export const Title = styled.div`
     justify-content: center;
     align-items: center;
     color: ${({ theme }) => theme.colors.background};
-
-    span {
-      background: ${({ theme }) => theme.colors.tertiary};
-    }
   }
 `;
 
 
 export const Logo = styled.div`
   img {
-    margin-bottom: 3rem;
+    margin: 2rem 0;
     height: 18rem;
     border-radius: 24px;
   }
