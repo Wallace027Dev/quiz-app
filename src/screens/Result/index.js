@@ -2,9 +2,10 @@ import React from 'react';
 import { Container, QuizResult } from './styles';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../components/Button';
-import paroquia from '../../assets/images/icon.svg';
-import check from '../../assets/images/check-icon.svg';
+import check from '../../assets/check-icon.svg';
 import { useQuizContext } from '../../context/QuizContext';
+import { texts } from '../../design/texts';
+import { images } from '../../design/images';
 
 const Result = () => {
   const navigate = useNavigate();
@@ -17,22 +18,22 @@ const Result = () => {
 
   const getResultMessage = () => {
     if (correctAnswer === 10) {
-      return 'Você foi incrível! Até o doutor angélico teria orgulho de você';
-    } else if (correctAnswer >= 8) {
-      return 'Parabéns! Você deve estudar bastante o catecismo';
-    } else if (correctAnswer >= 5) {
-      return 'Você se complicou! Seria interessante estudar um pouquinho mais o catecismo';
-    } else if (correctAnswer >= 3) {
-      return 'Ave Maria! Depois dessa é até bom se confessar';
+      return texts.results.if10;
+    } else if (correctAnswer > 8) {
+      return texts.results.greaterThan8;
+    } else if (correctAnswer > 5) {
+      return texts.results.greaterThan5;
+    } else if (correctAnswer > 3) {
+      return texts.results.greaterThan3;
     } else {
-      return 'Meu irmão! Acho que precisamos falar com o padre';
+      return texts.results.lessThanOrEqualTo3;
     }
   };
 
   return (
     <Container>
       <div>
-        <img src={paroquia} alt="Paróquia Nossa Senhora da Glória" />
+        <img src={images.logo} alt="Paróquia Nossa Senhora da Glória" />
         <h1>Resultado do Quiz</h1>
         <QuizResult>
           <img src={check} alt="Ícone de Correto" />

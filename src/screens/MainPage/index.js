@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { useQuizContext } from '../../context/QuizContext';
 import { Container, Logo, Quizes, Title } from './styles';
 import Button from '../../components/Button';
-import logoVertical from '../../assets/images/logo-vertical.svg';
+import { texts } from '../../design/texts';
+import { images } from '../../design/images';
 
 export default function MainPage({ quizes }) {
   const { updateQuiz } = useQuizContext();
@@ -16,18 +17,15 @@ export default function MainPage({ quizes }) {
     <Container>
       <Title>
         <h1>
-          <span>Quiz</span> Católico
+          <span>Quiz</span> {texts.headings.title}
         </h1>
-        <p>
-          Antes de começar, recorra à 'santíssima' ajuda! Peça a intercessão de
-          seu Santo de devoção para iluminar sua mente e acertar em cheio.
-        </p>
+        <p>{texts.descriptions.aboutUs}</p>
         <br />
-        <b>Que a sabedoria divina guie suas respostas!</b>
+        <b>{texts.descriptions.goodLucky}</b>
       </Title>
 
       <Logo>
-        <img src={logoVertical} alt="Paróquia Nossa Senhora da Glória" />
+        <img src={images.logo} alt="Ícone do site" />
 
         <Quizes>
           {quizes?.length > 0 ? (

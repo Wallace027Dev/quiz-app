@@ -5,9 +5,9 @@ import { Container, PcStatusBar, Status } from './styles';
 import StatusBar from '../../components/StatusBar';
 import QuestionOptions from '../../components/QuestionOptions';
 import Button from '../../components/Button';
-import close from '../../assets/images/close-icon.svg';
-import icon from '../../assets/images/icon.svg';
-import correct from '../../assets/images/check-icon.svg';
+import close from '../../assets/close-icon.svg';
+import correct from '../../assets/check-icon.svg';
+import { images } from '../../design/images';
 
 export default function Questions() {
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ export default function Questions() {
       <Status>
         <div className="question-title">
           <div>
-            <img src={icon} alt="Paróquia Nossa Senhora da Glória" />
+            <img src={images.logo} alt="Ícone do site" />
             <span>
               {correctAnswer}0 <img src={correct} alt="Respostas corretas" />
             </span>

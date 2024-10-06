@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuizContext } from "../../context/QuizContext";
 import { Container, ExplicationPar } from "./styles";
-import check from "../../assets/images/check-icon.svg";
-import incorrect from "../../assets/images/incorrect-icon.svg";
+import check from "../../assets/check-icon.svg";
+import incorrect from "../../assets/incorrect-icon.svg";
 
 export default function QuestionOptions({
   questions,
