@@ -5,20 +5,20 @@ export const texts = {
   },
 
   headings: {
-    title: "Católico",
-    welcome: "Bem-vindo ao site"
+    title: "Quiz de Programação",
+    welcome: "Bem-vindo ao Quiz de Programação!"
   },
 
   descriptions: {
-    aboutUs: "Antes de começar, recorra à 'santíssima' ajuda! Peça a intercessão de seu Santo de devoção para iluminar sua mente e acertar em cheio.",
-    goodLucky: "Que a sabedoria divina guie suas respostas!"
+    aboutUs: "Prepare-se! Teste seus conhecimentos de programação e veja se você é um verdadeiro ninja do código.",
+    goodLucky: "Boa sorte! Que seu código esteja sempre livre de bugs!"
   },
 
   results: {
-    if10: "Você foi incrível! Até o doutor angélico teria orgulho de você",
-    greaterThan8: "Parabéns! Você deve estudar bastante o catecismo",
-    greaterThan5: "Você se complicou! Seria interessante estudar um pouquinho mais o catecismo",
-    greaterThan3: "Ave Maria! Depois dessa é até bom se confessar",
-    lessThanOrEqualTo3: "Meu irmão! Acho que precisamos falar com o padre"
+    if10: "Você foi incrível! Parece até que está pronto para ser tech lead!",
+    greaterThan8: "Parabéns! Seu conhecimento de programação está em dia, continue evoluindo.",
+    greaterThan5: "Você se complicou em algumas questões. Hora de revisar uns conceitos para melhorar ainda mais!",
+    greaterThan3: "Opa! Parece que você se enrolou um pouco. Que tal dedicar um tempo extra nos estudos?",
+    lessThanOrEqualTo3: "Hmm... talvez seja hora de rever as bases da programação antes de tentar de novo."
   }
 };

@@ -85,7 +85,7 @@ export const Container = styled.div`
   }
 
   .correct {
-    background: ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.correct};
 
     span {
       background: ${({ theme }) => theme.colors.lightFont};

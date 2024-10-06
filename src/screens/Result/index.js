@@ -33,7 +33,7 @@ const Result = () => {
   return (
     <Container>
       <div>
-        <img src={images.logo} alt="Paróquia Nossa Senhora da Glória" />
+        <img src={images.logo} alt="Logo" />
         <h1>Resultado do Quiz</h1>
         <QuizResult>
           <img src={check} alt="Ícone de Correto" />

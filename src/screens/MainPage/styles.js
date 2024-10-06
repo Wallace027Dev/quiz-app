@@ -22,6 +22,10 @@ export const Title = styled.div`
   font-size: 1.2rem;
   color: ${({ theme }) => theme.colors.lightFont};
 
+  h1 {
+    margin-bottom: 2rem;
+  }
+
   span {
     width: 5.2rem;
     height: 2.5rem;
@@ -57,7 +61,7 @@ export const Title = styled.div`
 
 export const Logo = styled.div`
   img {
-    margin: 1rem;
+    margin-bottom: 3rem;
     height: 18rem;
   }
 

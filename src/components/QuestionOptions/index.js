@@ -13,7 +13,7 @@ export default function QuestionOptions({
   const navigate = useNavigate();
   const { updatePoints } = useQuizContext();
   const [answerSelected, setAnswerSelected] = useState(null);
-  const [shuffledButtonTextArray, setShuffledButtonTextArray] = useState([]);
+  const [shuffledAnswers, setShuffledAnswers] = useState([]);
   const [isAnswerSelected, setIsAnswerSelected] = useState(false);
   const [explication, setExplication] = useState("");
   const buttonRefs = useRef(Array.from({ length: 3 }));
@@ -26,12 +26,8 @@ export default function QuestionOptions({
 
   useEffect(() => {
     try {
-      const shuffledAnswers = shuffleArray([
-        question?.answer1,
-        question?.answer2,
-        question?.answer3
-      ]);
-      setShuffledButtonTextArray(shuffledAnswers);
+      const shuffled = shuffleArray(question?.answers || []);
+      setShuffledAnswers(shuffled);
       setIsAnswerSelected(false);
     } catch (error) {
       console.error("Ocorreu um erro:", error);
@@ -56,24 +52,24 @@ export default function QuestionOptions({
       return;
     }
 
-    const buttonText = getButtonText(answerIndex);
     const currentButton = buttonRefs.current[answerIndex];
 
-    const imageSrc = buttonText === question.answer1 ? check : incorrect;
-    const buttonClass =
-      buttonText === question.answer1 ? "correct" : "incorrect";
+    const isCorrect = question.answers[answerIndex].correct;
 
-    buttonText === question.answer1 && updatePoints(1);
+    const imageSrc = isCorrect ? check : incorrect;
+    const buttonClass = isCorrect ? "correct" : "incorrect";
+    const buttonText = question.answers[answerIndex].text;
+
+    isCorrect && updatePoints(1);
 
     currentButton.classList.add(buttonClass);
     currentButton.innerHTML = `<span><img src=${imageSrc} /></span><p>${buttonText}</p>`;
+
     setAnswerSelected(answerIndex);
     setIsAnswerSelected(true);
     setExplication(question.explication);
     onIsAnswerSelectedChange(true);
   };
-
-  const getButtonText = (index) => shuffledButtonTextArray[index];
 
   return (
     <>
@@ -88,7 +84,7 @@ export default function QuestionOptions({
         >
           <h1>{question?.question}</h1>
 
-          {shuffledButtonTextArray.map((buttonText, index) => (
+          {shuffledAnswers.map((answer, index) => (
             <button
               key={`button-${index}`}
               ref={(el) => (buttonRefs.current[index] = el)}
@@ -97,7 +93,7 @@ export default function QuestionOptions({
               disabled={isAnswerSelected}
             >
               <span>{String.fromCharCode(65 + index)}</span>
-              <p>{buttonText}</p>
+              <p>{answer.text}</p>
             </button>
           ))}
 

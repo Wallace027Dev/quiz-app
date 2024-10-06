@@ -1,15 +1,16 @@
 const designSystem = {
   colors: {
-    background: "#ede8e3",
+    background: "#f4f4f4",
     lightFont: "#f4f3f6",
     darkFont: "#060710",
-    primary: "#31cd63",
-    secondary: "#45c486",
-    tertiary: "#936e38",
-    disabled: "#747475"
+    primary: "#f2c744",
+    secondary: "#212531",
+    tertiary: "#f2c744",
+    disabled: "#747475",
+    correct: "#31cd63"
   },
   typography: {
-    fontFamily: "'Roboto', sans-serif",
+    fontFamily: "'futura', sans-serif",
     fontSize: "1"
   }
 };
