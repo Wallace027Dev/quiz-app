@@ -9,6 +9,10 @@ export const Container = styled.div`
   @media screen and (max-width: 768px) {
     justify-content: space-around;
     padding: 3rem 1.25rem;
+
+    .phone-status-bar {
+      text-align: center;
+    }
   }
 
   @media screen and (min-width: 768px) {

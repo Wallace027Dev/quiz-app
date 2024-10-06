@@ -5,7 +5,6 @@ export const Container = styled.div`
 
   .status-bar {
     min-width: 15rem;
-    max-width: 20.935rem;
     width: 100%;
     height: 1.2rem;
     background-color: ${({ theme }) => theme.colors.lightFont};
