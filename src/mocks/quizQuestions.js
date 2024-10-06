@@ -1,7 +1,7 @@
 const quizQuestions = [
   {
     id: 1,
-    name: "JavaScript Quiz #1",
+    name: "JavaScript Básico Quiz",
     questions: [
       {
         id: 1,
@@ -63,7 +63,7 @@ const quizQuestions = [
   },
   {
     id: 2,
-    name: "HTML Quiz #1",
+    name: "HTML Básico",
     questions: [
       {
         id: 1,
@@ -149,7 +149,7 @@ const quizQuestions = [
   },
   {
     id: 3,
-    name: "CSS Quiz #1",
+    name: "CSS Básico",
     questions: [
       {
         id: 1,
@@ -232,6 +232,81 @@ const quizQuestions = [
           { id: 1, text: "@import", correct: false },
           { id: 2, text: "@font-face", correct: true },
           { id: 3, text: "@media", correct: false }
+        ]
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: "JavaScript Functions",
+    questions: [
+      {
+        id: 1,
+        question: "O que faz a palavra-chave `return` em uma função?",
+        explication:
+          "A palavra-chave `return` encerra a execução de uma função e especifica o valor a ser retornado para o local onde a função foi chamada.",
+        answers: [
+          {
+            id: 1,
+            text: "Encerra a função sem retornar valor",
+            correct: false
+          },
+          { id: 2, text: "Retorna um valor e encerra a função", correct: true },
+          { id: 3, text: "Inicia a função", correct: false }
+        ]
+      },
+      {
+        id: 2,
+        question: "Qual é a forma correta de definir uma função em JavaScript?",
+        explication:
+          "Em JavaScript, você pode definir uma função usando a palavra-chave `function`, seguida do nome da função e parênteses.",
+        answers: [
+          { id: 1, text: "function minhaFuncao {}", correct: true },
+          { id: 2, text: "define minhaFuncao() {}", correct: false },
+          { id: 3, text: "func minhaFuncao() {}", correct: false }
+        ]
+      },
+      {
+        id: 3,
+        question:
+          "O que acontece se você tentar acessar uma variável não definida dentro de uma função?",
+        explication:
+          "Se você tentar acessar uma variável não definida dentro de uma função, isso resultará em um erro de referência (ReferenceError).",
+        answers: [
+          { id: 1, text: "Retorna undefined", correct: false },
+          { id: 2, text: "Gera um erro de referência", correct: true },
+          { id: 3, text: "Retorna null", correct: false }
+        ]
+      },
+      {
+        id: 4,
+        question:
+          "Qual é a diferença entre funções declarativas e funções expressas?",
+        explication:
+          "Funções declarativas são definidas usando a palavra-chave `function`, enquanto funções expressas são atribuídas a variáveis.",
+        answers: [
+          { id: 1, text: "Nenhuma diferença", correct: false },
+          {
+            id: 2,
+            text: "Funções declarativas podem ser chamadas antes de serem definidas",
+            correct: true
+          },
+          {
+            id: 3,
+            text: "Funções expressas não podem ser chamadas",
+            correct: false
+          }
+        ]
+      },
+      {
+        id: 5,
+        question: "O que é uma função anônima?",
+        explication:
+          "Uma função anônima é uma função que não tem nome e é geralmente usada como um argumento em outra função.",
+        answers: [
+          { id: 1, text: "Uma função que não retorna valores", correct: false },
+          { id: 2, text: "Uma função sem nome", correct: true },
+          { id: 3, text: "Uma função que é sempre chamada", correct: false }
         ]
       }
     ]
