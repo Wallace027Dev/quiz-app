@@ -75,7 +75,7 @@ export const Container = styled.div`
     button:not([disabled]):hover {
       cursor: pointer;
       transition: 0.4s;
-      background: ${({ theme }) => theme.colors.secondary};
+      background: ${({ theme }) => theme.colors.hover};
       opacity: 0.5;
     }
 
@@ -100,7 +100,7 @@ export const Container = styled.div`
 `;
 
 export const ExplicationPar = styled.p`
-  margin-top: 16;
-  font-size: 14;
-  color: ${({ theme }) => theme.colors.primary};
+  margin-top: 16px;
+  font-size: 18px;
+  color: ${({ theme }) => theme.colors.tertiary};
 `;

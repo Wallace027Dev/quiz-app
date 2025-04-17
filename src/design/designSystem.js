@@ -5,9 +5,10 @@ const designSystem = {
     darkFont: "#060710",
     primary: "#f2c744",
     secondary: "#212531",
-    tertiary: "#f2c744",
+    tertiary: "#161922",
     disabled: "#747475",
-    correct: "#31cd63"
+    correct: "#31cd63",
+    hover: "#ffe680"
   },
   typography: {
     fontFamily: "'futura', sans-serif",

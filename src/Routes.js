@@ -4,7 +4,7 @@ import { QuizProvider } from './context/QuizContext';
 import MainPage from './screens/MainPage';
 import Questions from './screens/Questions';
 import Result from './screens/Result';
-import quizes from './mocks/quizQuestions';
+import quizes from './mocks/quizQuestions.json';
 
 function AppRoutes() {
   return (

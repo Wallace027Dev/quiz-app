@@ -20,6 +20,6 @@ export const Container = styled.button`
 
   &:hover:not(:disabled) {
     cursor: pointer;
-    background: ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.hover};
   }
 `;
