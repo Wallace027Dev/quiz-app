@@ -278,16 +278,6 @@
         ]
       },
       {
-        "id": 5,
-        "question": "Como aplicar um estilo CSS diretamente em um elemento HTML?",
-        "explication": "Use o atributo `style` com a sintaxe CSS embutida.",
-        "answers": [
-          { "id": 1, "text": "<p style='color: red;'>", "correct": true },
-          { "id": 2, "text": "<p css='color: red;'>", "correct": false },
-          { "id": 3, "text": "<p style-css='color: red;'>", "correct": false }
-        ]
-      },
-      {
         "id": 6,
         "question": "Qual seletor aplica estilos a todos os elementos de uma página?",
         "explication": "O seletor `*` aplica estilos universalmente.",
