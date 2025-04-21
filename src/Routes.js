@@ -5,6 +5,7 @@ import MainPage from './screens/MainPage';
 import Questions from './screens/Questions';
 import Result from './screens/Result';
 import quizes from './mocks/quizQuestions.json';
+import NewQuiz from './screens/NewQuiz';
 
 function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ function AppRoutes() {
           <Route path="/" element={<MainPage quizes={quizes} />} />
           <Route path="/questions" element={<Questions />} />
           <Route path="/result" element={<Result />} />
+          <Route path="/new-quiz" element={<NewQuiz />} />
         </Routes>
       </QuizProvider>
     </Router>
