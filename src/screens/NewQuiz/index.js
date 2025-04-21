@@ -1,6 +1,7 @@
 import { useFieldArray, useForm } from "react-hook-form";
 import NewQuestionForm from "../../components/NewQuestionForm";
 import { ButtonContainer, Container } from "./style";
+import Button from "../../components/Button";
 
 export default function NewQuiz() {
   const { register, handleSubmit, reset, watch, control } = useForm({
@@ -65,7 +66,7 @@ export default function NewQuiz() {
             Adicionar pergunta
           </button>
 
-          <button type="submit">Salvar Quiz</button>
+          <Button type="submit">Salvar Quiz</Button>
         </ButtonContainer>
       </form>
     </Container>

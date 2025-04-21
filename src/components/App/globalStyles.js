@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import designSystem from "./design/designSystem";
+import designSystem from "../../design/designSystem";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${designSystem.colors.darkFont};
     font-family: ${designSystem.typography.fontFamily};
     text-align: center;
+    text-decoration: none;
   }
 
   input,
@@ -32,25 +33,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: inherit;
     font-size: 1rem;
     background-color: #fff;
-  }
-
-  button {
-    cursor: pointer;
-    border-radius: 4px;
-    background-color: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.tertiary};
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    font-family: inherit;
-    font-size: 1rem;
-    min-width: 16rem;
-    text-align: center;
-    text-transform: uppercase;
-    transition: background-color 0.2s ease-in-out;
-  }
-
-  button:hover {
-    background-color: ${({ theme }) => theme.colors.hover};
   }
 
   fieldset {

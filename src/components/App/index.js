@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
-import designSystem from "./design/designSystem";
+import designSystem from "../../design/designSystem";
 import GlobalStyle from "./globalStyles";
-import AppRoutes from "./Routes";
+import AppRoutes from "../../Routes";
 
 function App() {
   return (

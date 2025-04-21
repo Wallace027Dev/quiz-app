@@ -32,7 +32,13 @@ export const ButtonContainer = styled.div`
   gap: 1rem;
   margin-top: 1rem;
 
-  button {
-    width: 20vw;
+  & > button:first-of-type {
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.primary};
+    }
   }
 `;
