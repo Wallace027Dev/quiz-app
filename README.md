@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um aplicativo de quiz interativo desenvolvido com React. Ele permite que os usuários testem seus conhecimentos em diferentes tópicos, como JavaScript, HTML e CSS, respondendo a perguntas de múltipla escolha.
 
-## Available Scripts
+<p align="center">
+  <img src="./public/assets/preview-1.png" alt="preview 1" width="250"/>
+  <img src="./public/assets/preview-2.png" alt="preview 2" width="250"/>
+  <img src="./public/assets/preview-3.png" alt="preview 3" width="250"/>
+</p>
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Página Inicial**: Exibe uma lista de quizzes disponíveis para o usuário selecionar.
+- **Perguntas do Quiz**: Apresenta perguntas de múltipla escolha com feedback imediato sobre a resposta correta ou incorreta.
+- **Resultado Final**: Mostra a pontuação final do usuário e uma mensagem personalizada com base no desempenho.
+- **Criação de Quiz**: Permite criar novos quizzes com perguntas personalizadas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Biblioteca principal para construção da interface.
+- **React Router**: Gerenciamento de rotas para navegação entre páginas.
+- **Styled Components**: Estilização dos componentes com CSS-in-JS.
+- **React Hook Form**: Gerenciamento de formulários para criação de quizzes.
+- **JSON**: Armazenamento das perguntas e respostas dos quizzes.
 
-### `npm test`
+## Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+quiz-app/
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   └── assets/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── App/
+│   │   ├── Button/
+│   │   ├── NewQuestionForm/
+│   │   ├── QuestionOptions/
+│   │   └── StatusBar/
+│   ├── context/
+│   │   └── QuizContext.js
+│   ├── design/
+│   │   ├── designSystem.js
+│   │   ├── images.js
+│   │   └── texts.js
+│   ├── mocks/
+│   │   └── quizQuestions.json
+│   ├── screens/
+│   │   ├── MainPage/
+│   │   ├── Questions/
+│   │   ├── Result/
+│   │   └── NewQuiz/
+│   ├── Routes.js
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-### `npm run build`
+## Como Executar o Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone o repositório**:
+```bash
+git clone https://github.com/Wallace027Dev/quiz-app.git
+cd quiz-app
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Instale as dependências**:
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Inicie o servidor de desenvolvimento**:
+```bash
+npm start
+```
 
-### `npm run eject`
+O aplicativo estará disponível em http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Build para produção**:
+```bash
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Scripts Disponíveis
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `npm start`: Inicia o servidor de desenvolvimento.
+- `npm test`: Executa os testes.
+- `npm run build`: Gera o build para produção.
+- `npm run eject`: Ejetar a configuração padrão do Create React App.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Estrutura de Dados
 
-## Learn More
+Os quizzes são armazenados no arquivo `quizQuestions.json`. Cada quiz contém:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `id`: Identificador único.
+- `name`: Nome do quiz.
+- `questions`: Lista de perguntas, cada uma com:
+  - `id`: Identificador único da pergunta.
+  - `question`: Texto da pergunta.
+  - `explication`: Explicação da resposta correta.
+  - `answers`: Lista de respostas com `text` e `correct`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribuição
 
-### Code Splitting
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Licença
 
-### Analyzing the Bundle Size
+Este projeto está licenciado sob a MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por [Wallace Vieira](https://wallacevieira.vercel.app) – Desenvolvedor Fullstack & entusiasta de jogos.
