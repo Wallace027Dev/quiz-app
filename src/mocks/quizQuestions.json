@@ -2,7 +2,6 @@
   {
     "id": 1,
     "name": "JavaScript Básico Quiz",
-    "journey": "Fundamentos de Programação",
     "journeyId": 1,
     "questions": [
       {
@@ -110,8 +109,7 @@
   {
     "id": 2,
     "name": "HTML Básico",
-    "journey": "Fundamentos de Programação",
-    "journeyId": 1,
+    "journeyId": 2,
     "questions": [
       {
         "id": 1,
@@ -230,8 +228,7 @@
   {
     "id": 3,
     "name": "CSS Básico",
-    "journey": "Fundamentos de Programação",
-    "journeyId": 1,
+    "journeyId": 2,
     "questions": [
       {
         "id": 1,
@@ -338,7 +335,6 @@
   {
     "id": 4,
     "name": "Soft-skills para programadores",
-    "journey": "Fundamentos de Programação",
     "journeyId": 1,
     "questions": [
       {
@@ -346,9 +342,21 @@
         "question": "O que são Soft Skills?",
         "explication": "Soft Skills são habilidades comportamentais como comunicação, trabalho em equipe, liderança e empatia.",
         "answers": [
-          { "id": 1, "text": "Habilidades técnicas de programação", "correct": false },
-          { "id": 2, "text": "Comportamentos e habilidades interpessoais", "correct": true },
-          { "id": 3, "text": "Ferramentas para automatizar tarefas", "correct": false }
+          {
+            "id": 1,
+            "text": "Habilidades técnicas de programação",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Comportamentos e habilidades interpessoais",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Ferramentas para automatizar tarefas",
+            "correct": false
+          }
         ]
       },
       {
@@ -357,8 +365,16 @@
         "explication": "Ser proativo é antecipar problemas e sugerir melhorias sem esperar ser cobrado.",
         "answers": [
           { "id": 1, "text": "Esperar ordens para agir", "correct": false },
-          { "id": 2, "text": "Tomar iniciativa para resolver problemas", "correct": true },
-          { "id": 3, "text": "Ignorar os problemas e seguir codando", "correct": false }
+          {
+            "id": 2,
+            "text": "Tomar iniciativa para resolver problemas",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Ignorar os problemas e seguir codando",
+            "correct": false
+          }
         ]
       },
       {
@@ -366,9 +382,21 @@
         "question": "Qual é uma prática importante para autogerenciamento no trabalho remoto?",
         "explication": "Organizar tarefas e manter disciplina são essenciais para produtividade sem supervisão constante.",
         "answers": [
-          { "id": 1, "text": "Deixar as tarefas para o final do dia", "correct": false },
-          { "id": 2, "text": "Organizar e planejar o dia de trabalho", "correct": true },
-          { "id": 3, "text": "Ignorar prazos e esperar cobranças", "correct": false }
+          {
+            "id": 1,
+            "text": "Deixar as tarefas para o final do dia",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Organizar e planejar o dia de trabalho",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Ignorar prazos e esperar cobranças",
+            "correct": false
+          }
         ]
       },
       {
@@ -376,9 +404,17 @@
         "question": "Trabalho em equipe é mais eficiente quando...",
         "explication": "Colaboração e respeito entre os membros são a base de um time eficiente.",
         "answers": [
-          { "id": 1, "text": "Cada um faz o seu e não conversa", "correct": false },
+          {
+            "id": 1,
+            "text": "Cada um faz o seu e não conversa",
+            "correct": false
+          },
           { "id": 2, "text": "Todos colaboram e se ajudam", "correct": true },
-          { "id": 3, "text": "Todos tentam liderar ao mesmo tempo", "correct": false }
+          {
+            "id": 3,
+            "text": "Todos tentam liderar ao mesmo tempo",
+            "correct": false
+          }
         ]
       },
       {
@@ -386,9 +422,21 @@
         "question": "Por que a comunicação é essencial em um time de desenvolvimento?",
         "explication": "Boa comunicação evita retrabalho e melhora a colaboração entre os membros da equipe.",
         "answers": [
-          { "id": 1, "text": "Para evitar retrabalho e alinhar expectativas", "correct": true },
-          { "id": 2, "text": "Para mostrar que sei mais que os outros", "correct": false },
-          { "id": 3, "text": "Para ganhar bônus no final do projeto", "correct": false }
+          {
+            "id": 1,
+            "text": "Para evitar retrabalho e alinhar expectativas",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "text": "Para mostrar que sei mais que os outros",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "text": "Para ganhar bônus no final do projeto",
+            "correct": false
+          }
         ]
       },
       {
@@ -398,7 +446,11 @@
         "answers": [
           { "id": 1, "text": "Somente quando alguém manda", "correct": false },
           { "id": 2, "text": "Antes que os problemas piorem", "correct": true },
-          { "id": 3, "text": "Apenas depois de ser chamado atenção", "correct": false }
+          {
+            "id": 3,
+            "text": "Apenas depois de ser chamado atenção",
+            "correct": false
+          }
         ]
       },
       {
@@ -406,9 +458,21 @@
         "question": "Como um desenvolvedor pode melhorar sua comunicação no time?",
         "explication": "Falar de forma clara, registrar decisões e pedir feedback são boas práticas.",
         "answers": [
-          { "id": 1, "text": "Guardando informações para si", "correct": false },
-          { "id": 2, "text": "Comunicando claramente e buscando feedbacks", "correct": true },
-          { "id": 3, "text": "Falando apenas com o líder de projeto", "correct": false }
+          {
+            "id": 1,
+            "text": "Guardando informações para si",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Comunicando claramente e buscando feedbacks",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Falando apenas com o líder de projeto",
+            "correct": false
+          }
         ]
       },
       {
@@ -416,9 +480,21 @@
         "question": "Autogerenciamento é importante porque...",
         "explication": "Times de tecnologia valorizam quem entrega resultados sem precisar ser microgerenciado.",
         "answers": [
-          { "id": 1, "text": "Permite trabalhar de forma independente e eficaz", "correct": true },
-          { "id": 2, "text": "Permite trabalhar só quando quiser", "correct": false },
-          { "id": 3, "text": "Permite fazer somente o mínimo necessário", "correct": false }
+          {
+            "id": 1,
+            "text": "Permite trabalhar de forma independente e eficaz",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "text": "Permite trabalhar só quando quiser",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "text": "Permite fazer somente o mínimo necessário",
+            "correct": false
+          }
         ]
       },
       {
@@ -426,9 +502,21 @@
         "question": "O que ajuda no trabalho em equipe em programação?",
         "explication": "Compartilhar conhecimentos e ajudar colegas acelera a entrega e fortalece o time.",
         "answers": [
-          { "id": 1, "text": "Competir com os colegas para ser promovido", "correct": false },
-          { "id": 2, "text": "Compartilhar conhecimento e boas práticas", "correct": true },
-          { "id": 3, "text": "Trabalhar isolado para entregar rápido", "correct": false }
+          {
+            "id": 1,
+            "text": "Competir com os colegas para ser promovido",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Compartilhar conhecimento e boas práticas",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Trabalhar isolado para entregar rápido",
+            "correct": false
+          }
         ]
       },
       {
@@ -436,7 +524,11 @@
         "question": "Quando devo pedir ajuda ao trabalhar em um projeto de programação?",
         "explication": "Pedir ajuda rapidamente evita bloqueios e melhora o ritmo do projeto.",
         "answers": [
-          { "id": 1, "text": "Quando não consigo resolver após tentar sozinho", "correct": true },
+          {
+            "id": 1,
+            "text": "Quando não consigo resolver após tentar sozinho",
+            "correct": true
+          },
           { "id": 2, "text": "Somente no final do projeto", "correct": false },
           { "id": 3, "text": "Nunca, é melhor errar sozinho", "correct": false }
         ]
@@ -446,8 +538,7 @@
   {
     "id": 5,
     "name": "Papéis na Área de Tecnologia",
-    "journey": "Fundamentos de Programação",
-    "journeyId": 1,
+    "journeyId": 9,
     "questions": [
       {
         "id": 1,
@@ -455,7 +546,11 @@
         "explication": "O CTO (Chief Technology Officer) lidera a estratégia tecnológica de uma empresa.",
         "answers": [
           { "id": 1, "text": "Gerenciar o RH da empresa", "correct": false },
-          { "id": 2, "text": "Definir a arquitetura e a direção tecnológica", "correct": true },
+          {
+            "id": 2,
+            "text": "Definir a arquitetura e a direção tecnológica",
+            "correct": true
+          },
           { "id": 3, "text": "Criar campanhas de marketing", "correct": false }
         ]
       },
@@ -464,9 +559,21 @@
         "question": "O que faz o CPO em uma empresa de tecnologia?",
         "explication": "O CPO (Chief Product Officer) é responsável pela visão e evolução dos produtos da empresa.",
         "answers": [
-          { "id": 1, "text": "Desenvolve os produtos sozinho", "correct": false },
-          { "id": 2, "text": "Define a estratégia e evolução dos produtos", "correct": true },
-          { "id": 3, "text": "Gerencia os servidores da empresa", "correct": false }
+          {
+            "id": 1,
+            "text": "Desenvolve os produtos sozinho",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Define a estratégia e evolução dos produtos",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Gerencia os servidores da empresa",
+            "correct": false
+          }
         ]
       },
       {
@@ -475,7 +582,11 @@
         "explication": "O CIO (Chief Information Officer) cuida da infraestrutura de TI e dos sistemas internos da empresa.",
         "answers": [
           { "id": 1, "text": "Criar o design dos produtos", "correct": false },
-          { "id": 2, "text": "Gerenciar os sistemas internos e infraestrutura de TI", "correct": true },
+          {
+            "id": 2,
+            "text": "Gerenciar os sistemas internos e infraestrutura de TI",
+            "correct": true
+          },
           { "id": 3, "text": "Treinar os desenvolvedores", "correct": false }
         ]
       },
@@ -485,8 +596,16 @@
         "explication": "O PO representa o cliente dentro do time e define as prioridades do produto.",
         "answers": [
           { "id": 1, "text": "Cuida apenas do código", "correct": false },
-          { "id": 2, "text": "Prioriza funcionalidades e define o que será feito", "correct": true },
-          { "id": 3, "text": "Testa o sistema após as entregas", "correct": false }
+          {
+            "id": 2,
+            "text": "Prioriza funcionalidades e define o que será feito",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Testa o sistema após as entregas",
+            "correct": false
+          }
         ]
       },
       {
@@ -495,7 +614,11 @@
         "explication": "O Scrum Master facilita o processo ágil e ajuda o time a remover impedimentos.",
         "answers": [
           { "id": 1, "text": "Lidera tecnicamente o time", "correct": false },
-          { "id": 2, "text": "Ajuda o time a seguir o framework ágil", "correct": true },
+          {
+            "id": 2,
+            "text": "Ajuda o time a seguir o framework ágil",
+            "correct": true
+          },
           { "id": 3, "text": "Escreve requisitos técnicos", "correct": false }
         ]
       },
@@ -505,7 +628,11 @@
         "explication": "Os desenvolvedores implementam soluções baseadas em requisitos funcionais e técnicos.",
         "answers": [
           { "id": 1, "text": "Gerar relatórios de vendas", "correct": false },
-          { "id": 2, "text": "Codificar funcionalidades do sistema", "correct": true },
+          {
+            "id": 2,
+            "text": "Codificar funcionalidades do sistema",
+            "correct": true
+          },
           { "id": 3, "text": "Fazer entrevistas de emprego", "correct": false }
         ]
       },
@@ -515,7 +642,11 @@
         "explication": "O QA garante a qualidade do produto através de testes e validações.",
         "answers": [
           { "id": 1, "text": "Apenas observa o time", "correct": false },
-          { "id": 2, "text": "Cria e executa testes para garantir qualidade", "correct": true },
+          {
+            "id": 2,
+            "text": "Cria e executa testes para garantir qualidade",
+            "correct": true
+          },
           { "id": 3, "text": "Configura o banco de dados", "correct": false }
         ]
       },
@@ -524,8 +655,16 @@
         "question": "Qual a diferença entre CTO e CIO?",
         "explication": "CTO foca em tecnologia para o produto, CIO cuida da TI interna da empresa.",
         "answers": [
-          { "id": 1, "text": "CTO cuida do RH, CIO da tecnologia", "correct": false },
-          { "id": 2, "text": "CTO cuida da tecnologia de produto, CIO da TI interna", "correct": true },
+          {
+            "id": 1,
+            "text": "CTO cuida do RH, CIO da tecnologia",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "CTO cuida da tecnologia de produto, CIO da TI interna",
+            "correct": true
+          },
           { "id": 3, "text": "Ambos fazem a mesma coisa", "correct": false }
         ]
       },
@@ -554,16 +693,23 @@
   {
     "id": 6,
     "name": "Testes, Deploy e Produção",
-    "journey": "Fundamentos de Programação",
-    "journeyId": 1,
+    "journeyId": 9,
     "questions": [
       {
         "id": 1,
         "question": "O que é o ambiente de produção?",
         "explication": "Produção é onde o sistema 'tá valendo', acessado por usuários reais.",
         "answers": [
-          { "id": 1, "text": "Onde fazemos testes arriscados", "correct": false },
-          { "id": 2, "text": "Ambiente real usado pelos usuários finais", "correct": true },
+          {
+            "id": 1,
+            "text": "Onde fazemos testes arriscados",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Ambiente real usado pelos usuários finais",
+            "correct": true
+          },
           { "id": 3, "text": "O computador do desenvolvedor", "correct": false }
         ]
       },
@@ -573,7 +719,11 @@
         "explication": "Testar diretamente em produção pode causar bugs visíveis para o usuário.",
         "answers": [
           { "id": 1, "text": "Porque é mais divertido", "correct": false },
-          { "id": 2, "text": "Porque isso pode afetar usuários reais", "correct": true },
+          {
+            "id": 2,
+            "text": "Porque isso pode afetar usuários reais",
+            "correct": true
+          },
           { "id": 3, "text": "Porque não é possível", "correct": false }
         ]
       },
@@ -582,9 +732,21 @@
         "question": "O que significa CI/CD?",
         "explication": "CI/CD é uma prática de automação de testes (CI) e deploys (CD).",
         "answers": [
-          { "id": 1, "text": "Código Imediato / Computador do Desenvolvedor", "correct": false },
-          { "id": 2, "text": "Integração Contínua / Entrega Contínua", "correct": true },
-          { "id": 3, "text": "Conexão Interna / Comunicação Digital", "correct": false }
+          {
+            "id": 1,
+            "text": "Código Imediato / Computador do Desenvolvedor",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Integração Contínua / Entrega Contínua",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Conexão Interna / Comunicação Digital",
+            "correct": false
+          }
         ]
       },
       {
@@ -602,9 +764,21 @@
         "question": "Por que existem ambientes como 'homologação' ou 'teste'?",
         "explication": "Ambientes de teste evitam que problemas cheguem à produção.",
         "answers": [
-          { "id": 1, "text": "Pra confundir os programadores", "correct": false },
-          { "id": 2, "text": "Pra testar com segurança antes de ir pra produção", "correct": true },
-          { "id": 3, "text": "Pra gastar mais dinheiro com servidores", "correct": false }
+          {
+            "id": 1,
+            "text": "Pra confundir os programadores",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Pra testar com segurança antes de ir pra produção",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Pra gastar mais dinheiro com servidores",
+            "correct": false
+          }
         ]
       },
       {
@@ -613,7 +787,11 @@
         "explication": "Teste automatizado é um código que verifica se outro código funciona.",
         "answers": [
           { "id": 1, "text": "Um robô clicando no site", "correct": false },
-          { "id": 2, "text": "Um código que verifica o comportamento de outro código", "correct": true },
+          {
+            "id": 2,
+            "text": "Um código que verifica o comportamento de outro código",
+            "correct": true
+          },
           { "id": 3, "text": "Um teste feito com planilhas", "correct": false }
         ]
       },
@@ -622,8 +800,16 @@
         "question": "O que significa 'derrubar o servidor em produção'?",
         "explication": "É uma forma informal de dizer que o site ou sistema ficou fora do ar.",
         "answers": [
-          { "id": 1, "text": "Literalmente empurrar o computador do servidor", "correct": false },
-          { "id": 2, "text": "Fazer o sistema sair do ar por causa de erro ou falha", "correct": true },
+          {
+            "id": 1,
+            "text": "Literalmente empurrar o computador do servidor",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Fazer o sistema sair do ar por causa de erro ou falha",
+            "correct": true
+          },
           { "id": 3, "text": "Desligar o notebook do dev", "correct": false }
         ]
       },
@@ -633,7 +819,11 @@
         "explication": "Rollback é desfazer uma atualização que deu errado.",
         "answers": [
           { "id": 1, "text": "Apagar todo o projeto", "correct": false },
-          { "id": 2, "text": "Reverter uma versão problemática do sistema", "correct": true },
+          {
+            "id": 2,
+            "text": "Reverter uma versão problemática do sistema",
+            "correct": true
+          },
           { "id": 3, "text": "Voltar a estudar lógica", "correct": false }
         ]
       },
@@ -643,7 +833,11 @@
         "explication": "CI permite validar mudanças no código automaticamente, via testes e builds.",
         "answers": [
           { "id": 1, "text": "Fazer deploys manualmente", "correct": false },
-          { "id": 2, "text": "Detectar problemas cedo, através de testes automatizados", "correct": true },
+          {
+            "id": 2,
+            "text": "Detectar problemas cedo, através de testes automatizados",
+            "correct": true
+          },
           { "id": 3, "text": "Executar código em Python", "correct": false }
         ]
       },
@@ -654,7 +848,11 @@
         "answers": [
           { "id": 1, "text": "Apenas confiar no código", "correct": false },
           { "id": 2, "text": "Testar e validar o sistema", "correct": true },
-          { "id": 3, "text": "Fazer deploy de madrugada sem avisar ninguém", "correct": false }
+          {
+            "id": 3,
+            "text": "Fazer deploy de madrugada sem avisar ninguém",
+            "correct": false
+          }
         ]
       }
     ]
@@ -662,8 +860,7 @@
   {
     "id": 7,
     "name": "Organização de Estudos e Ferramentas",
-    "journey": "Fundamentos de Programação",
-    "journeyId": 1,
+    "journeyId": 9,
     "questions": [
       {
         "id": 1,
@@ -671,7 +868,11 @@
         "explication": "O Notion é uma ferramenta de organização que permite criar notas, bancos de dados, tarefas e mais.",
         "answers": [
           { "id": 1, "text": "Rodar código JavaScript", "correct": false },
-          { "id": 2, "text": "Organizar tarefas, estudos e anotações", "correct": true },
+          {
+            "id": 2,
+            "text": "Organizar tarefas, estudos e anotações",
+            "correct": true
+          },
           { "id": 3, "text": "Fazer videochamadas", "correct": false }
         ]
       },
@@ -681,7 +882,11 @@
         "explication": "Ter um plano claro, metas alcançáveis e registrar seu progresso ajuda a manter o foco.",
         "answers": [
           { "id": 1, "text": "Ter o melhor computador", "correct": false },
-          { "id": 2, "text": "Planejar com metas e cronogramas", "correct": true },
+          {
+            "id": 2,
+            "text": "Planejar com metas e cronogramas",
+            "correct": true
+          },
           { "id": 3, "text": "Estudar tudo no mesmo dia", "correct": false }
         ]
       },
@@ -690,7 +895,11 @@
         "question": "Para que serve o Microsoft Word?",
         "explication": "O Word é usado principalmente para escrever textos formatados, como relatórios e documentos.",
         "answers": [
-          { "id": 1, "text": "Criar apresentações com slides", "correct": false },
+          {
+            "id": 1,
+            "text": "Criar apresentações com slides",
+            "correct": false
+          },
           { "id": 2, "text": "Editar textos com formatação", "correct": true },
           { "id": 3, "text": "Fazer cálculos automáticos", "correct": false }
         ]
@@ -711,7 +920,11 @@
         "explication": "O PowerPoint é ideal para criar apresentações visuais com textos, imagens e animações.",
         "answers": [
           { "id": 1, "text": "Programar em React", "correct": false },
-          { "id": 2, "text": "Criar apresentações com slides", "correct": true },
+          {
+            "id": 2,
+            "text": "Criar apresentações com slides",
+            "correct": true
+          },
           { "id": 3, "text": "Testar APIs com Postman", "correct": false }
         ]
       },
@@ -721,7 +934,11 @@
         "explication": "Você pode usar o Notion para registrar erros, salvar links, anotar aprendizados e planejar projetos.",
         "answers": [
           { "id": 1, "text": "Executar código HTML", "correct": false },
-          { "id": 2, "text": "Organizar aprendizados, tarefas e links úteis", "correct": true },
+          {
+            "id": 2,
+            "text": "Organizar aprendizados, tarefas e links úteis",
+            "correct": true
+          },
           { "id": 3, "text": "Testar servidores em produção", "correct": false }
         ]
       },
@@ -731,8 +948,16 @@
         "explication": "Dividir o tempo entre teoria e prática ajuda a consolidar o aprendizado.",
         "answers": [
           { "id": 1, "text": "Só ver vídeos no YouTube", "correct": false },
-          { "id": 2, "text": "Estudar um pouco e praticar bastante", "correct": true },
-          { "id": 3, "text": "Copiar e colar tudo do Stack Overflow", "correct": false }
+          {
+            "id": 2,
+            "text": "Estudar um pouco e praticar bastante",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Copiar e colar tudo do Stack Overflow",
+            "correct": false
+          }
         ]
       },
       {
@@ -741,7 +966,11 @@
         "explication": "É possível usar o Excel para montar cronogramas, acompanhar metas ou até simular algoritmos.",
         "answers": [
           { "id": 1, "text": "Salvar memes", "correct": false },
-          { "id": 2, "text": "Fazer cronogramas e cálculos de tempo", "correct": true },
+          {
+            "id": 2,
+            "text": "Fazer cronogramas e cálculos de tempo",
+            "correct": true
+          },
           { "id": 3, "text": "Rodar código JavaScript", "correct": false }
         ]
       },
@@ -751,7 +980,11 @@
         "explication": "Um calendário ajuda a distribuir o conteúdo no tempo e manter a constância.",
         "answers": [
           { "id": 1, "text": "Pra decorar a tela do PC", "correct": false },
-          { "id": 2, "text": "Pra manter consistência e foco nos estudos", "correct": true },
+          {
+            "id": 2,
+            "text": "Pra manter consistência e foco nos estudos",
+            "correct": true
+          },
           { "id": 3, "text": "Pra estudar só no fim do mês", "correct": false }
         ]
       },
@@ -770,8 +1003,7 @@
   {
     "id": 8,
     "name": "Métodos Ágeis e Ferramentas de Gestão",
-    "journey": "Fundamentos de Programação",
-    "journeyId": 1,
+    "journeyId": 9,
     "questions": [
       {
         "id": 1,
@@ -809,8 +1041,16 @@
         "explication": "O Product Owner (PO) é responsável por priorizar o backlog e representar os interesses do cliente.",
         "answers": [
           { "id": 1, "text": "Codar tudo sozinho", "correct": false },
-          { "id": 2, "text": "Representar o cliente e priorizar entregas", "correct": true },
-          { "id": 3, "text": "Cuidar dos testes automatizados", "correct": false }
+          {
+            "id": 2,
+            "text": "Representar o cliente e priorizar entregas",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Cuidar dos testes automatizados",
+            "correct": false
+          }
         ]
       },
       {
@@ -829,7 +1069,11 @@
         "explication": "O Trello é uma ferramenta de gestão visual de tarefas baseada em Kanban.",
         "answers": [
           { "id": 1, "text": "Desenhar diagramas UML", "correct": false },
-          { "id": 2, "text": "Gerenciar tarefas com quadros e cartões", "correct": true },
+          {
+            "id": 2,
+            "text": "Gerenciar tarefas com quadros e cartões",
+            "correct": true
+          },
           { "id": 3, "text": "Rodar código Python", "correct": false }
         ]
       },
@@ -839,8 +1083,16 @@
         "explication": "Scrum trabalha com ciclos fixos (Sprints), já o Kanban é contínuo e mais flexível.",
         "answers": [
           { "id": 1, "text": "Scrum é visual, Kanban não", "correct": false },
-          { "id": 2, "text": "Scrum tem sprints, Kanban é contínuo", "correct": true },
-          { "id": 3, "text": "Scrum é gratuito, Kanban é pago", "correct": false }
+          {
+            "id": 2,
+            "text": "Scrum tem sprints, Kanban é contínuo",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Scrum é gratuito, Kanban é pago",
+            "correct": false
+          }
         ]
       },
       {
@@ -849,7 +1101,11 @@
         "explication": "Jira é uma ferramenta de gestão de tarefas e projetos, muito usada em times ágeis e squads.",
         "answers": [
           { "id": 1, "text": "Uma linguagem de programação", "correct": false },
-          { "id": 2, "text": "Uma ferramenta de gestão de projetos", "correct": true },
+          {
+            "id": 2,
+            "text": "Uma ferramenta de gestão de projetos",
+            "correct": true
+          },
           { "id": 3, "text": "Um banco de dados em nuvem", "correct": false }
         ]
       },
@@ -869,8 +1125,16 @@
         "explication": "Significa que o time possui membros com diferentes habilidades: front, back, design, QA, etc.",
         "answers": [
           { "id": 1, "text": "Só programadores backend", "correct": false },
-          { "id": 2, "text": "Pessoas com diferentes especialidades trabalhando juntas", "correct": true },
-          { "id": 3, "text": "Pessoas que fazem o mesmo trabalho", "correct": false }
+          {
+            "id": 2,
+            "text": "Pessoas com diferentes especialidades trabalhando juntas",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Pessoas que fazem o mesmo trabalho",
+            "correct": false
+          }
         ]
       }
     ]
@@ -878,8 +1142,7 @@
   {
     "id": 9,
     "name": "Viabilização de Produto e Gestão de Projetos",
-    "journey": "Fundamentos de Programação",
-    "journeyId": 1,
+    "journeyId": 9,
     "questions": [
       {
         "id": 1,
@@ -887,8 +1150,16 @@
         "explication": "Viabilizar um produto é avaliar se ele é possível de ser feito, útil para o público e sustentável financeiramente.",
         "answers": [
           { "id": 1, "text": "Criar um protótipo bonito", "correct": false },
-          { "id": 2, "text": "Testar se a ideia pode dar certo na prática", "correct": true },
-          { "id": 3, "text": "Publicar direto na loja de apps", "correct": false }
+          {
+            "id": 2,
+            "text": "Testar se a ideia pode dar certo na prática",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Publicar direto na loja de apps",
+            "correct": false
+          }
         ]
       },
       {
@@ -897,7 +1168,11 @@
         "explication": "Saber se o problema realmente existe é uma das chaves para saber se vale a pena desenvolver o produto.",
         "answers": [
           { "id": 1, "text": "Quantos likes vou receber?", "correct": false },
-          { "id": 2, "text": "Esse problema realmente existe para alguém?", "correct": true },
+          {
+            "id": 2,
+            "text": "Esse problema realmente existe para alguém?",
+            "correct": true
+          },
           { "id": 3, "text": "Qual linguagem eu gosto mais?", "correct": false }
         ]
       },
@@ -906,8 +1181,16 @@
         "question": "O que é um MVP (Produto Mínimo Viável)?",
         "explication": "Um MVP é a versão mais simples de um produto que já entrega valor ao usuário, usada para validar uma ideia.",
         "answers": [
-          { "id": 1, "text": "A versão mais cara do produto", "correct": false },
-          { "id": 2, "text": "Uma versão simples para testar a ideia", "correct": true },
+          {
+            "id": 1,
+            "text": "A versão mais cara do produto",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Uma versão simples para testar a ideia",
+            "correct": true
+          },
           { "id": 3, "text": "O design completo do sistema", "correct": false }
         ]
       },
@@ -917,8 +1200,16 @@
         "explication": "Prazos ajudam a organizar o tempo, definir prioridades e entregar valor de forma contínua.",
         "answers": [
           { "id": 1, "text": "Para pressionar o time", "correct": false },
-          { "id": 2, "text": "Para ter organização e foco nas entregas", "correct": true },
-          { "id": 3, "text": "Para reduzir o salário dos envolvidos", "correct": false }
+          {
+            "id": 2,
+            "text": "Para ter organização e foco nas entregas",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Para reduzir o salário dos envolvidos",
+            "correct": false
+          }
         ]
       },
       {
@@ -927,7 +1218,11 @@
         "explication": "Escopo é o que será entregue no projeto: funcionalidades, regras, requisitos e limitações.",
         "answers": [
           { "id": 1, "text": "O custo da hospedagem", "correct": false },
-          { "id": 2, "text": "As funcionalidades e entregas previstas", "correct": true },
+          {
+            "id": 2,
+            "text": "As funcionalidades e entregas previstas",
+            "correct": true
+          },
           { "id": 3, "text": "O nome do repositório", "correct": false }
         ]
       },
@@ -936,8 +1231,16 @@
         "question": "O que pode acontecer se não respeitarmos o escopo e prazo do projeto?",
         "explication": "Fugir do escopo ou extrapolar prazos pode gerar retrabalho, atrasos e desperdício de recursos.",
         "answers": [
-          { "id": 1, "text": "O projeto termina mais rápido", "correct": false },
-          { "id": 2, "text": "Pode gerar atrasos e retrabalho", "correct": true },
+          {
+            "id": 1,
+            "text": "O projeto termina mais rápido",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Pode gerar atrasos e retrabalho",
+            "correct": true
+          },
           { "id": 3, "text": "Os bugs desaparecem", "correct": false }
         ]
       },
@@ -946,8 +1249,16 @@
         "question": "Por que é importante coletar dados sobre os usuários?",
         "explication": "Os dados ajudam a entender como os usuários se comportam, o que funciona ou não, e como melhorar.",
         "answers": [
-          { "id": 1, "text": "Para vender os dados ilegalmente", "correct": false },
-          { "id": 2, "text": "Para entender e melhorar o produto", "correct": true },
+          {
+            "id": 1,
+            "text": "Para vender os dados ilegalmente",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Para entender e melhorar o produto",
+            "correct": true
+          },
           { "id": 3, "text": "Para saber quem copiar", "correct": false }
         ]
       },
@@ -967,7 +1278,11 @@
         "explication": "Métrica é um número que mostra se o produto está atingindo seu objetivo, como número de usuários ativos.",
         "answers": [
           { "id": 1, "text": "A nota do time no hackathon", "correct": false },
-          { "id": 2, "text": "Indicadores que mostram o sucesso do produto", "correct": true },
+          {
+            "id": 2,
+            "text": "Indicadores que mostram o sucesso do produto",
+            "correct": true
+          },
           { "id": 3, "text": "O número de commits no GitHub", "correct": false }
         ]
       },
@@ -976,9 +1291,176 @@
         "question": "Qual dessas ações ajuda a manter um projeto viável ao longo do tempo?",
         "explication": "Revisar dados, ouvir feedbacks e ajustar o planejamento são práticas fundamentais para manter a viabilidade.",
         "answers": [
-          { "id": 1, "text": "Ignorar o feedback do usuário", "correct": false },
-          { "id": 2, "text": "Coletar feedback e ajustar o produto", "correct": true },
+          {
+            "id": 1,
+            "text": "Ignorar o feedback do usuário",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Coletar feedback e ajustar o produto",
+            "correct": true
+          },
           { "id": 3, "text": "Evitar mudanças no projeto", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Git e GitHub na Prática",
+    "journeyId": 1,
+    "questions": [
+      {
+        "id": 1,
+        "question": "O que é o Git?",
+        "explication": "Git é um sistema de controle de versão distribuído, usado para rastrear mudanças no código e colaborar em equipe.",
+        "answers": [
+          { "id": 1, "text": "Um editor de código", "correct": false },
+          {
+            "id": 2,
+            "text": "Um sistema de controle de versão",
+            "correct": true
+          },
+          { "id": 3, "text": "Um banco de dados relacional", "correct": false }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Qual é o papel do GitHub?",
+        "explication": "GitHub é uma plataforma online para hospedar repositórios Git, facilitando colaboração, versionamento e deploy.",
+        "answers": [
+          { "id": 1, "text": "Um substituto do Git", "correct": false },
+          {
+            "id": 2,
+            "text": "Uma plataforma para hospedar projetos Git",
+            "correct": true
+          },
+          { "id": 3, "text": "Um navegador web", "correct": false }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Para que serve o comando 'git init'?",
+        "explication": "O comando 'git init' cria um novo repositório Git na pasta atual.",
+        "answers": [
+          { "id": 1, "text": "Baixar o Git", "correct": false },
+          {
+            "id": 2,
+            "text": "Iniciar um novo repositório local",
+            "correct": true
+          },
+          { "id": 3, "text": "Atualizar o código no GitHub", "correct": false }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "O que acontece ao executar 'git add .’?",
+        "explication": "'git add .' adiciona todas as mudanças do diretório atual para a área de staging (preparação para commit).",
+        "answers": [
+          {
+            "id": 1,
+            "text": "Apaga arquivos não versionados",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Prepara os arquivos para commit",
+            "correct": true
+          },
+          { "id": 3, "text": "Faz o commit diretamente", "correct": false }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Qual a função do comando 'git commit'?",
+        "explication": "'git commit' salva as alterações adicionadas com uma mensagem descritiva, criando um ponto de versão no histórico do projeto.",
+        "answers": [
+          { "id": 1, "text": "Envia o código para o GitHub", "correct": false },
+          {
+            "id": 2,
+            "text": "Salva as alterações localmente no repositório",
+            "correct": true
+          },
+          { "id": 3, "text": "Remove arquivos duplicados", "correct": false }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Para que serve 'git push'?",
+        "explication": "'git push' envia os commits locais para o repositório remoto (ex: GitHub).",
+        "answers": [
+          { "id": 1, "text": "Atualiza a versão do Git", "correct": false },
+          {
+            "id": 2,
+            "text": "Envia os commits locais para o repositório remoto",
+            "correct": true
+          },
+          { "id": 3, "text": "Baixa alterações do GitHub", "correct": false }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "O que o comando 'git clone' faz?",
+        "explication": "'git clone' copia um repositório remoto para a sua máquina local.",
+        "answers": [
+          { "id": 1, "text": "Cria uma nova branch", "correct": false },
+          {
+            "id": 2,
+            "text": "Copia um repositório remoto para sua máquina",
+            "correct": true
+          },
+          { "id": 3, "text": "Apaga arquivos antigos", "correct": false }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Qual comando mostra o histórico de commits?",
+        "explication": "'git log' exibe a lista dos commits feitos, com hash, autor, data e mensagem.",
+        "answers": [
+          { "id": 1, "text": "git list", "correct": false },
+          { "id": 2, "text": "git history", "correct": false },
+          { "id": 3, "text": "git log", "correct": true }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "O que é uma branch no Git?",
+        "explication": "Branches permitem desenvolver funcionalidades isoladamente, sem afetar o código principal (geralmente a branch 'main').",
+        "answers": [
+          {
+            "id": 1,
+            "text": "Uma pasta com arquivos duplicados",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Uma cópia independente do código para testar mudanças",
+            "correct": true
+          },
+          { "id": 3, "text": "Um tipo de commit especial", "correct": false }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Quando usamos 'git pull'?",
+        "explication": "'git pull' traz as mudanças mais recentes do repositório remoto para seu repositório local.",
+        "answers": [
+          {
+            "id": 1,
+            "text": "Quando queremos enviar código novo para o GitHub",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "text": "Quando queremos sincronizar com o repositório remoto",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "text": "Quando iniciamos um novo repositório",
+            "correct": false
+          }
         ]
       }
     ]

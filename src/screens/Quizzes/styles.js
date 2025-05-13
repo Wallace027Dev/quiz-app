@@ -46,7 +46,7 @@ export const Title = styled.div`
     font-size: 1.48rem;
     background: ${({ theme }) => theme.colors.secondary};
     height: 100vh;
-    width: 50vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,5 +88,9 @@ export const Quizes = styled.div`
 
   @media screen and (min-width: 1366px) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1920px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 `;

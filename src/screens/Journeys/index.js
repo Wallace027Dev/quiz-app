@@ -12,7 +12,8 @@ const journeys = [
   { id: 5, name: "Tipagem com TypeScript" },
   { id: 6, name: "Desenvolvimento Fullstack" },
   { id: 7, name: "Modelagem de Banco de Dados" },
-  { id: 8, name: "Desenvolvedor no Mercado" }
+  { id: 8, name: "Desenvolvedor no Mercado" },
+  { id: 9, name: "Extra: Entendendo a área da tecnologia" }
 ];
 
 export default function Journeys() {
@@ -25,7 +26,9 @@ export default function Journeys() {
   return (
     <Container>
       <Title>
-        <h1>Escolha sua <span>Jornada</span></h1>
+        <h1>
+          Escolha sua <span>Jornada</span>
+        </h1>
         <p>{texts.descriptions.aboutUs}</p>
         <br />
         <b>{texts.descriptions.goodLucky}</b>
