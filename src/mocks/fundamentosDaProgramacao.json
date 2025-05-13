@@ -1,336 +1,6 @@
 [
   {
-    "id": 1,
-    "name": "JavaScript Básico Quiz",
-    "questions": [
-      {
-        "id": 1,
-        "question": "Qual das opções é usada para declarar uma variável em JavaScript?",
-        "explication": "A palavra-chave correta para declarar variáveis em JavaScript é `let`, `const` ou `var`.",
-        "answers": [
-          { "id": 1, "text": "var", "correct": true },
-          { "id": 2, "text": "let", "correct": true },
-          { "id": 3, "text": "def", "correct": false }
-        ]
-      },
-      {
-        "id": 2,
-        "question": "O que o método `Array.map()` faz?",
-        "explication": "O `map()` cria um novo array com os resultados da função aplicada em cada elemento do array original.",
-        "answers": [
-          { "id": 1, "text": "Modifica o array original", "correct": false },
-          { "id": 2, "text": "Retorna um novo array", "correct": true },
-          { "id": 3, "text": "Filtra os valores do array", "correct": false }
-        ]
-      },
-      {
-        "id": 3,
-        "question": "Como você converte uma string para um número em JavaScript?",
-        "explication": "Funções como `Number()`, `parseInt()`, ou `parseFloat()` podem ser usadas para converter uma string para número.",
-        "answers": [
-          { "id": 1, "text": "Number()", "correct": true },
-          { "id": 2, "text": "toString()", "correct": false },
-          { "id": 3, "text": "parseInt()", "correct": true }
-        ]
-      },
-      {
-        "id": 4,
-        "question": "O que `NaN` significa em JavaScript?",
-        "explication": "`NaN` significa \"Not-a-Number\" e é retornado quando uma operação não retorna um número válido.",
-        "answers": [
-          { "id": 1, "text": "Novo Array Numérico", "correct": false },
-          { "id": 2, "text": "Not-a-Number", "correct": true },
-          { "id": 3, "text": "Nome de uma variável inválida", "correct": false }
-        ]
-      },
-      {
-        "id": 5,
-        "question": "Qual é o valor de `typeof null` em JavaScript?",
-        "explication": "O valor de `typeof null` é um bug histórico, retornando \"object\".",
-        "answers": [
-          { "id": 1, "text": "null", "correct": false },
-          { "id": 2, "text": "undefined", "correct": false },
-          { "id": 3, "text": "object", "correct": true }
-        ]
-      },
-      {
-        "id": 6,
-        "question": "Qual destas estruturas é usada para repetição em JavaScript?",
-        "explication": "Laços como `for`, `while` e `do...while` permitem executar blocos de código repetidamente.",
-        "answers": [
-          { "id": 1, "text": "loop", "correct": false },
-          { "id": 2, "text": "for", "correct": true },
-          { "id": 3, "text": "repeat", "correct": false }
-        ]
-      },
-      {
-        "id": 7,
-        "question": "O que o operador `===` verifica?",
-        "explication": "O operador `===` verifica igualdade de valor e tipo.",
-        "answers": [
-          { "id": 1, "text": "Igualdade de valor apenas", "correct": false },
-          { "id": 2, "text": "Igualdade de tipo apenas", "correct": false },
-          { "id": 3, "text": "Igualdade de valor e tipo", "correct": true }
-        ]
-      },
-      {
-        "id": 8,
-        "question": "Como declarar uma função em JavaScript?",
-        "explication": "Funções podem ser declaradas com `function nome() {}`.",
-        "answers": [
-          { "id": 1, "text": "function minhaFuncao() {}", "correct": true },
-          { "id": 2, "text": "def minhaFuncao()", "correct": false },
-          { "id": 3, "text": "fun minhaFuncao {}", "correct": false }
-        ]
-      },
-      {
-        "id": 9,
-        "question": "Qual objeto representa o console no navegador?",
-        "explication": "`console` é um objeto global usado para exibir mensagens no console do navegador.",
-        "answers": [
-          { "id": 1, "text": "terminal", "correct": false },
-          { "id": 2, "text": "log", "correct": false },
-          { "id": 3, "text": "console", "correct": true }
-        ]
-      },
-      {
-        "id": 10,
-        "question": "Qual método verifica se um array inclui um valor específico?",
-        "explication": "O método `includes()` retorna true se o valor for encontrado.",
-        "answers": [
-          { "id": 1, "text": "contains()", "correct": false },
-          { "id": 2, "text": "has()", "correct": false },
-          { "id": 3, "text": "includes()", "correct": true }
-        ]
-      }
-    ]
-  },
-  {
     "id": 2,
-    "name": "HTML Básico",
-    "questions": [
-      {
-        "id": 1,
-        "question": "Qual é o propósito da tag `<title>` no HTML?",
-        "explication": "A tag `<title>` define o título da página, que aparece na aba do navegador.",
-        "answers": [
-          {
-            "id": 1,
-            "text": "Exibe o título no corpo da página",
-            "correct": false
-          },
-          {
-            "id": 2,
-            "text": "Define o título exibido na aba do navegador",
-            "correct": true
-          },
-          {
-            "id": 3,
-            "text": "Define o título de um parágrafo",
-            "correct": false
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "question": "Qual tag é usada para adicionar uma imagem em HTML?",
-        "explication": "A tag `<img>` é usada para incorporar imagens no HTML.",
-        "answers": [
-          { "id": 1, "text": "<image>", "correct": false },
-          { "id": 2, "text": "<img>", "correct": true },
-          { "id": 3, "text": "<src>", "correct": false }
-        ]
-      },
-      {
-        "id": 3,
-        "question": "Qual atributo HTML é usado para definir um link?",
-        "explication": "O atributo `href` é utilizado na tag `<a>` para definir o destino do link.",
-        "answers": [
-          { "id": 1, "text": "src", "correct": false },
-          { "id": 2, "text": "href", "correct": true },
-          { "id": 3, "text": "link", "correct": false }
-        ]
-      },
-      {
-        "id": 4,
-        "question": "Qual é o elemento HTML correto para criar um parágrafo?",
-        "explication": "O elemento `<p>` é utilizado para definir parágrafos em HTML.",
-        "answers": [
-          { "id": 1, "text": "<p>", "correct": true },
-          { "id": 2, "text": "<div>", "correct": false },
-          { "id": 3, "text": "<span>", "correct": false }
-        ]
-      },
-      {
-        "id": 5,
-        "question": "Qual das opções NÃO é um tipo de input em um formulário HTML?",
-        "explication": "`heading` não é um tipo de input válido em HTML.",
-        "answers": [
-          { "id": 1, "text": "text", "correct": false },
-          { "id": 2, "text": "radio", "correct": false },
-          { "id": 3, "text": "heading", "correct": true }
-        ]
-      },
-      {
-        "id": 6,
-        "question": "Qual tag HTML é usada para criar um botão?",
-        "explication": "A tag `<button>` é usada para criar botões interativos em HTML.",
-        "answers": [
-          { "id": 1, "text": "<btn>", "correct": false },
-          { "id": 2, "text": "<button>", "correct": true },
-          { "id": 3, "text": "<input>", "correct": false }
-        ]
-      },
-      {
-        "id": 7,
-        "question": "Qual elemento HTML define a maior hierarquia de títulos?",
-        "explication": "O elemento `<h1>` é o título de maior hierarquia em HTML.",
-        "answers": [
-          { "id": 1, "text": "<h1>", "correct": true },
-          { "id": 2, "text": "<header>", "correct": false },
-          { "id": 3, "text": "<title>", "correct": false }
-        ]
-      },
-      {
-        "id": 8,
-        "question": "Qual tag define uma lista ordenada em HTML?",
-        "explication": "A tag `<ol>` é usada para criar listas numeradas.",
-        "answers": [
-          { "id": 1, "text": "<ul>", "correct": false },
-          { "id": 2, "text": "<ol>", "correct": true },
-          { "id": 3, "text": "<li>", "correct": false }
-        ]
-      },
-      {
-        "id": 9,
-        "question": "Qual atributo define o texto alternativo para uma imagem?",
-        "explication": "O atributo `alt` descreve o conteúdo da imagem, essencial para acessibilidade.",
-        "answers": [
-          { "id": 1, "text": "title", "correct": false },
-          { "id": 2, "text": "alt", "correct": true },
-          { "id": 3, "text": "description", "correct": false }
-        ]
-      },
-      {
-        "id": 10,
-        "question": "Onde o conteúdo visível de uma página HTML deve estar?",
-        "explication": "O conteúdo visível deve estar dentro da tag `<body>`.",
-        "answers": [
-          { "id": 1, "text": "<head>", "correct": false },
-          { "id": 2, "text": "<html>", "correct": false },
-          { "id": 3, "text": "<body>", "correct": true }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "name": "CSS Básico",
-    "questions": [
-      {
-        "id": 1,
-        "question": "Qual é a sintaxe correta para adicionar uma cor de fundo em CSS?",
-        "explication": "O `background-color` define a cor de fundo de um elemento.",
-        "answers": [
-          { "id": 1, "text": "color-background: blue;", "correct": false },
-          { "id": 2, "text": "background-color: blue;", "correct": true },
-          { "id": 3, "text": "background: blue;", "correct": true }
-        ]
-      },
-      {
-        "id": 2,
-        "question": "Qual propriedade CSS é usada para alterar a cor do texto?",
-        "explication": "A propriedade `color` altera a cor do texto em um elemento.",
-        "answers": [
-          { "id": 1, "text": "font-color", "correct": false },
-          { "id": 2, "text": "text-color", "correct": false },
-          { "id": 3, "text": "color", "correct": true }
-        ]
-      },
-      {
-        "id": 3,
-        "question": "Qual propriedade CSS é usada para controlar o espaçamento entre linhas?",
-        "explication": "A propriedade `line-height` ajusta o espaçamento vertical entre as linhas de texto.",
-        "answers": [
-          { "id": 1, "text": "letter-spacing", "correct": false },
-          { "id": 2, "text": "line-height", "correct": true },
-          { "id": 3, "text": "text-spacing", "correct": false }
-        ]
-      },
-      {
-        "id": 4,
-        "question": "Qual propriedade CSS é usada para esconder um elemento da página, mas manter seu espaço reservado?",
-        "explication": "`visibility: hidden` esconde o elemento, mas mantém o espaço que ele ocupa na página.",
-        "answers": [
-          { "id": 1, "text": "display: none", "correct": false },
-          { "id": 2, "text": "visibility: hidden", "correct": true },
-          { "id": 3, "text": "opacity: 0", "correct": false }
-        ]
-      },
-      {
-        "id": 5,
-        "question": "Qual unidade de medida é relativa ao tamanho da fonte do elemento pai em CSS?",
-        "explication": "A unidade `em` é relativa ao tamanho da fonte do elemento pai.",
-        "answers": [
-          { "id": 1, "text": "px", "correct": false },
-          { "id": 2, "text": "em", "correct": true },
-          { "id": 3, "text": "%", "correct": false }
-        ]
-      },
-      {
-        "id": 6,
-        "question": "Qual seletor aplica estilos a todos os elementos de uma página?",
-        "explication": "O seletor `*` aplica estilos universalmente.",
-        "answers": [
-          { "id": 1, "text": "*", "correct": true },
-          { "id": 2, "text": "all", "correct": false },
-          { "id": 3, "text": ".", "correct": false }
-        ]
-      },
-      {
-        "id": 7,
-        "question": "Como selecionar um elemento por ID em CSS?",
-        "explication": "Use `#id` para aplicar estilos a um elemento com ID específico.",
-        "answers": [
-          { "id": 1, "text": "#meuElemento", "correct": true },
-          { "id": 2, "text": ".meuElemento", "correct": false },
-          { "id": 3, "text": "meuElemento", "correct": false }
-        ]
-      },
-      {
-        "id": 8,
-        "question": "Qual propriedade é usada para deixar o texto em negrito?",
-        "explication": "`font-weight: bold;` torna o texto em negrito.",
-        "answers": [
-          { "id": 1, "text": "text-weight", "correct": false },
-          { "id": 2, "text": "font-style", "correct": false },
-          { "id": 3, "text": "font-weight", "correct": true }
-        ]
-      },
-      {
-        "id": 9,
-        "question": "Qual unidade representa uma porcentagem da largura do elemento pai?",
-        "explication": "A unidade `%` representa uma porcentagem relativa ao elemento pai.",
-        "answers": [
-          { "id": 1, "text": "px", "correct": false },
-          { "id": 2, "text": "em", "correct": false },
-          { "id": 3, "text": "%", "correct": true }
-        ]
-      },
-      {
-        "id": 10,
-        "question": "Como centralizar um texto horizontalmente?",
-        "explication": "A propriedade `text-align: center;` centraliza o texto no elemento.",
-        "answers": [
-          { "id": 1, "text": "text-center: true;", "correct": false },
-          { "id": 2, "text": "text-align: center;", "correct": true },
-          { "id": 3, "text": "align-text: center;", "correct": false }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 4,
     "name": "Soft-skills para programadores",
     "journey": "Fundamentos de Programação",
     "questions": [
@@ -437,7 +107,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 3,
     "name": "Papéis na Área de Tecnologia",
     "journey": "Fundamentos de Programação",
     "questions": [
@@ -544,7 +214,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 4,
     "name": "Testes, Deploy e Produção",
     "journey": "Fundamentos de Programação",
     "questions": [
@@ -651,7 +321,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 5,
     "name": "Organização de Estudos e Ferramentas",
     "journey": "Fundamentos de Programação",
     "questions": [
@@ -758,7 +428,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 6,
     "name": "Métodos Ágeis e Ferramentas de Gestão",
     "journey": "Fundamentos de Programação",
     "questions": [
@@ -865,7 +535,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 7,
     "name": "Viabilização de Produto e Gestão de Projetos",
     "journey": "Fundamentos de Programação",
     "questions": [

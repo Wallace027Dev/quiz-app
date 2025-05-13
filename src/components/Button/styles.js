@@ -8,9 +8,9 @@ export const Container = styled.button`
   color: ${({ theme }) => theme.colors.lightFont};
   font-weight: 600;
   font-size: ${({ theme }) => `${theme.typography.fontSize}rem`};
-  height: 3.75rem !important;
+  height: 3.75rem;
   max-width: 20rem;
-  min-width: 16rem !important;
+  min-width: 16rem;
   transition: all 0.35s;
   text-transform: uppercase;
   text-align: center;

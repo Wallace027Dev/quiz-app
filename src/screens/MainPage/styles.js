@@ -77,10 +77,9 @@ export const Logo = styled.div`
 `;
 
 export const Quizes = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;

@@ -1,0 +1,87 @@
+@startuml CoursePlatform
+
+class Course {
+  +id: number
+  +name: string
+  +description: string
+  +journeys: Journey[]
+}
+
+class Journey {
+  +id: number
+  +name: string
+  +courseId: number
+  +contents: Content[]
+}
+
+class Content {
+  +id: number
+  +journeyId: number
+  +type: string
+  +title: string
+  +order: number
+  +metadata: object
+}
+
+class Quiz {
+  +id: number
+  +name: string
+  +questions: Question[]
+}
+
+class Question {
+  +id: number
+  +question: string
+  +explication: string
+  +answers: Answer[]
+}
+
+class Answer {
+  +id: number
+  +text: string
+  +correct: boolean
+}
+
+class User {
+  +id: number
+  +name: string
+  +email: string
+  +attempts: Attempt[]
+}
+
+class Attempt {
+  +id: number
+  +userId: number
+  +quizId: number
+  +result: Result
+  +timestamp: Date
+}
+
+class Result {
+  +id: number
+  +attemptId: number
+  +score: number
+  +feedback: string
+}
+
+class UserProgress {
+  +id: number
+  +userId: number
+  +contentId: number
+  +completedAt: Date
+}
+
+Course "1" -- "*" Journey
+Journey "1" -- "*" Content
+Content "1" -- "0..1" Quiz
+Quiz "1" -- "*" Question
+Question "1" -- "*" Answer
+
+User "1" -- "*" Attempt
+Quiz "1" -- "*" Attempt
+Attempt "1" -- "1" Result
+
+User "1" -- "*" UserProgress
+Content "1" -- "*" UserProgress
+
+@enduml

@@ -16,6 +16,11 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   input,
   textarea,
   button,
