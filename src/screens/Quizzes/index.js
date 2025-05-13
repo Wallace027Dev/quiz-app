@@ -8,7 +8,9 @@ import Button from "../../components/Button";
 export default function Quizzes({ quizes }) {
   const { updateQuiz } = useQuizContext();
   const { journeyId } = useParams();
-  const filtered = quizes.filter((quiz) => quiz.journeyId === Number(journeyId));
+  const filtered = quizes.filter(
+    (quiz) => quiz.journeyId === Number(journeyId)
+  );
 
   useEffect(() => {
     updateQuiz(filtered);
@@ -27,17 +29,17 @@ export default function Quizzes({ quizes }) {
 
       <Aside>
         <Link to="/">Voltar</Link>
-        <Quizes>
-          {filtered?.length > 0 ? (
-            filtered.map((quiz) => (
+        {filtered?.length > 0 ? (
+          <Quizes>
+            {filtered.map((quiz) => (
               <Link to="/questions" key={quiz.id}>
                 <Button onClick={() => updateQuiz(quiz)}>{quiz.name}</Button>
               </Link>
-            ))
-          ) : (
-            <h1>Algo de errado aconteceu!</h1>
-          )}
-        </Quizes>
+            ))}
+          </Quizes>
+        ) : (
+          <h1>Ainda não existe quizzes para essa jornada</h1>
+        )}
       </Aside>
     </Container>
   );
