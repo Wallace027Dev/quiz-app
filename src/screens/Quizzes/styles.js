@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   padding: 3rem 1.25rem;
   text-align: center;
 
@@ -55,7 +55,6 @@ export const Title = styled.div`
   }
 `;
 
-
 export const Logo = styled.div`
   img {
     margin: 2rem 0;
@@ -76,13 +75,18 @@ export const Logo = styled.div`
   }
 `;
 
+export const Aside = styled.aside`
+  margin: 0 auto;
+  text-align: right;
+`;
+
 export const Quizes = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
+  margin-top: 1rem;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+  @media screen and (min-width: 1366px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 `;

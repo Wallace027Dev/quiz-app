@@ -11,6 +11,7 @@ export const Container = styled.button`
   height: 3.75rem;
   max-width: 20rem;
   min-width: 16rem;
+  padding: 0.75rem 1rem;
   transition: all 0.35s;
   text-transform: uppercase;
   text-align: center;

@@ -2,6 +2,8 @@
   {
     "id": 1,
     "name": "JavaScript Básico Quiz",
+    "journey": "Fundamentos de Programação",
+    "journeyId": 1,
     "questions": [
       {
         "id": 1,
@@ -108,6 +110,8 @@
   {
     "id": 2,
     "name": "HTML Básico",
+    "journey": "Fundamentos de Programação",
+    "journeyId": 1,
     "questions": [
       {
         "id": 1,
@@ -226,6 +230,8 @@
   {
     "id": 3,
     "name": "CSS Básico",
+    "journey": "Fundamentos de Programação",
+    "journeyId": 1,
     "questions": [
       {
         "id": 1,
@@ -333,6 +339,7 @@
     "id": 4,
     "name": "Soft-skills para programadores",
     "journey": "Fundamentos de Programação",
+    "journeyId": 1,
     "questions": [
       {
         "id": 1,
@@ -440,6 +447,7 @@
     "id": 5,
     "name": "Papéis na Área de Tecnologia",
     "journey": "Fundamentos de Programação",
+    "journeyId": 1,
     "questions": [
       {
         "id": 1,
@@ -547,6 +555,7 @@
     "id": 6,
     "name": "Testes, Deploy e Produção",
     "journey": "Fundamentos de Programação",
+    "journeyId": 1,
     "questions": [
       {
         "id": 1,
@@ -654,6 +663,7 @@
     "id": 7,
     "name": "Organização de Estudos e Ferramentas",
     "journey": "Fundamentos de Programação",
+    "journeyId": 1,
     "questions": [
       {
         "id": 1,
@@ -761,6 +771,7 @@
     "id": 8,
     "name": "Métodos Ágeis e Ferramentas de Gestão",
     "journey": "Fundamentos de Programação",
+    "journeyId": 1,
     "questions": [
       {
         "id": 1,
@@ -868,6 +879,7 @@
     "id": 9,
     "name": "Viabilização de Produto e Gestão de Projetos",
     "journey": "Fundamentos de Programação",
+    "journeyId": 1,
     "questions": [
       {
         "id": 1,
